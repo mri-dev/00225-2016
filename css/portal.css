@@ -1,0 +1,82 @@
+/* Portal Index */
+table#portalMainMenu td.menu,
+table#portalSide td.menu {
+	margin: 0;
+	padding: 0;
+}
+table#portalSide { 
+	border:1px solid #D2D2D2;
+	background:#FFFFFF;
+	width:100%;
+}
+table#portalSide td.boxtitle{
+	background:url("../images/bgbar.jpg") repeat-x;
+	color:#333333;
+	font-weight:700;
+	height:25px;
+}
+table#portalSide td.menu div.portalSide {
+	border-left:5px solid #D2D2D2;
+	padding:1px;
+	padding-bottom:10px;
+}
+table#portalMainMenu td.menu a ,
+table#portalSide td.menu a {
+	border-left:5px solid #D2D2D2;
+	border-bottom: 1px solid #D2D2D2;
+	margin-right:8px;
+	margin-top:-1px;
+	margin-bottom:8px;
+	display:block;
+	padding:1px;
+	padding-left:25px;
+	background-color: #FFFFFF;
+	color:#333333;
+	text-decoration: none;
+	font-weight:700;
+}
+table#portalSide td.menu a {
+	margin:0;
+}
+table#portalMainMenu td.menu a:hover,
+table#portalSide td.menu a:hover {
+	border-left:5px solid #D2D2D2;
+	background-color: #FFFFFF;
+	color: #3d658b;
+}
+table#portalMainMenu td.menu a {
+	min-height:60px;
+}
+table#portalMainMenu td.menu a span.linkText {
+	display:block;
+	border-bottom:1px dotted #333333;
+	margin-bottom:3px;
+}
+table#portalMainMenu td.menu a:hover span.linkText {
+	border-bottom:1px dotted #3d658b;
+}
+table#portalMainMenu td.menu a span.linkDesc {
+	line-height:12px;
+	font-weight:400;
+	display:block;
+	font-size:smaller;
+	color: #000000;
+	text-align:justify;
+	padding:2px;
+}
+table#portalMainMenu td.menu a:hover span.linkDesc {
+	color:#666666;
+}
+table#portalSide td.menu a.logout,
+table#portalMainMenu td.menu a.logout	{ background:url("../images/portal/logout.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.base 	{ background:url("../images/portal/base.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.welcome 	{ background:url("../images/portal/welcome.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.check 	{ background:url("../images/portal/domaincheck.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.kb	 	{ background:url("../images/portal/kb.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.news 	{ background:url("../images/portal/news.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.cart 	{ background:url("../images/portal/cart.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.helpdesk	{ background:url("../images/portal/helpdesk.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.contact 	{ background:url("../images/portal/contact.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.support	{ background:url("../images/portal/support.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.invoice	{ background:url("../images/portal/money.png") no-repeat 5px 5px; }
+table#portalMainMenu td.menu a.newacct	{ background:url("../images/portal/join.png") no-repeat 5px 5px; }

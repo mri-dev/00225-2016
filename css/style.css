@@ -1,0 +1,59 @@
+/* line 3, sass/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+/* line 8, sass/style.scss */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 13, sass/style.scss */
+#blockDiv {
+  display: none;
+}
+
+/* line 17, sass/style.scss */
+.header {
+  background: #1296d9;
+  padding: 1px 0;
+}
+/* line 20, sass/style.scss */
+.header .a-list {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 26, sass/style.scss */
+.header .a-list li {
+  color: white;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  border-left: 1px solid #77caf4;
+  padding: 8px 14px;
+  font-size: 0.85em;
+}
+/* line 35, sass/style.scss */
+.header .a-list li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 43, sass/style.scss */
+.logo-row {
+  padding: 35px 0;
+  border-bottom: 1px solid #e5e8eb;
+  margin-bottom: 25px;
+}
+
+/* line 48, sass/style.scss */
+.page-holder {
+  width: 1100px;
+  margin: 0 auto;
+}

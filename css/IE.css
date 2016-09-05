@@ -1,0 +1,6 @@
+div.paging ul#paging li a {
+	margin-right: -2px;
+}
+form#langSelect input {
+	height:22px;
+}

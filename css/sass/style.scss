@@ -1,0 +1,51 @@
+@import 'settings';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+.wrapper {
+    width:100%;
+    margin: 0 auto;
+}
+
+#blockDiv {
+    display: none;
+}
+
+.header {
+    background: $color-primary;
+    padding: 1px 0;
+    .a-list{
+        float: right;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            color: white;
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            border-left: 1px solid lighten($color-primary, 25%);
+            padding: 8px 14px;
+            font-size: 0.85em;
+
+            a{
+                color: white;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+}
+.logo-row {
+    padding: 35px 0;
+    border-bottom: 1px solid #e5e8eb;
+    margin-bottom: 25px;
+}
+.page-holder {
+    width: $page-width;
+    margin: 0 auto;
+}
