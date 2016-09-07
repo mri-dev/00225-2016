@@ -40,10 +40,12 @@ body {
         }
     }
 }
+.top-main-header{
+    border-bottom: 2px solid #dee5eb;
+}
 .logo-row {
     padding: 35px 0;
     border-bottom: 1px solid #e5e8eb;
-    margin-bottom: 25px;
 }
 .page-holder {
     width: $page-width;
