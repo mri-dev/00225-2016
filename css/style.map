@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "sass/style.css",
+	"sources": [
+		"sass/style.scss",
+		"sass/_settings.scss"
+	],
+	"sourcesContent": [
+		"@import 'settings';\n\nbody {\n    margin: 0;\n    padding: 0;\n    font-size: 100%;\n}\n.wrapper {\n    width:100%;\n    margin: 0 auto;\n}\n\n#blockDiv {\n    display: none;\n}\n\n.header {\n    background: $color-primary;\n    padding: 1px 0;\n    .a-list{\n        float: right;\n        list-style: none;\n        margin: 0;\n        padding: 0;\n\n        li {\n            color: white;\n            display: inline-block;\n            *display: inline;\n            zoom: 1;\n            border-left: 1px solid lighten($color-primary, 25%);\n            padding: 8px 14px;\n            font-size: 0.85em;\n\n            a{\n                color: white;\n                text-decoration: none;\n                display: block;\n            }\n        }\n    }\n}\n.logo-row {\n    padding: 35px 0;\n    border-bottom: 1px solid #e5e8eb;\n    margin-bottom: 25px;\n}\n.page-holder {\n    width: $page-width;\n    margin: 0 auto;\n}\n",
+		"$page-width: 1100px;\n$color-primary: #1296d9;\n"
+	],
+	"mappings": ";AAEA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,SAAS,EAAE,IAAK,GACnB;;;AACD,AAAA,QAAQ,CAAC;EACL,KAAK,EAAC,IAAK;EACX,MAAM,EAAE,MAAO,GAClB;;;AAED,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,IAAK,GACjB;;;AAED,AAAA,OAAO,CAAC;EACJ,UAAU,EChBE,OAAO;EDiBnB,OAAO,EAAE,KAAM,GAuBlB;;EAzBD,AAGI,OAHG,CAGH,OAAO,CAAA;IACH,KAAK,EAAE,KAAM;IACb,UAAU,EAAE,IAAK;IACjB,MAAM,EAAE,CAAE;IACV,OAAO,EAAE,CAAE,GAiBd;;IAxBL,AASQ,OATD,CAGH,OAAO,CAMH,EAAE,CAAC;MACC,KAAK,EAAE,KAAM;MACb,OAAO,EAAE,YAAa;MACtB,QAAQ,EAAE,MAAO;MACjB,IAAI,EAAE,CAAE;MACR,WAAW,EAAE,GAAG,CAAC,KAAK,CAAC,OAAO;MAC9B,OAAO,EAAE,QAAS;MAClB,SAAS,EAAE,MAAO,GAOrB;;MAvBT,AAkBY,OAlBL,CAGH,OAAO,CAMH,EAAE,CASE,CAAC,CAAA;QACG,KAAK,EAAE,KAAM;QACb,eAAe,EAAE,IAAK;QACtB,OAAO,EAAE,KAAM,GAClB;;;AAIb,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,MAAO;EAChB,aAAa,EAAE,iBAAkB;EACjC,aAAa,EAAE,IAAK,GACvB;;;AACD,AAAA,YAAY,CAAC;EACT,KAAK,EChDI,MAAM;EDiDf,MAAM,EAAE,MAAO,GAClB",
+	"names": []
+}
