@@ -1,63 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 /* line 3, sass/style.scss */
 body {
   margin: 0;
   padding: 0;
-  font-size: 100%;
-}
+  font-size: 1.43em;
+  font-family: 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale; }
 
-/* line 8, sass/style.scss */
+/* line 12, sass/style.scss */
 .wrapper {
   width: 100%;
-  margin: 0 auto;
-}
-
-/* line 13, sass/style.scss */
-#blockDiv {
-  display: none;
-}
+  margin: 0 auto; }
 
 /* line 17, sass/style.scss */
+#blockDiv {
+  display: none; }
+
+/* line 21, sass/style.scss */
 .header {
   background: #1296d9;
-  padding: 1px 0;
-}
-/* line 20, sass/style.scss */
-.header .a-list {
-  float: right;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 26, sass/style.scss */
-.header .a-list li {
-  color: white;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  border-left: 1px solid #77caf4;
-  padding: 8px 14px;
-  font-size: 0.85em;
-}
-/* line 35, sass/style.scss */
-.header .a-list li a {
-  color: white;
-  text-decoration: none;
-  display: block;
-}
+  padding: 1px 0; }
+  /* line 24, sass/style.scss */
+  .header .a-list {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    /* line 30, sass/style.scss */
+    .header .a-list li {
+      color: white;
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      border-left: 1px solid #77caf4;
+      padding: 8px 14px;
+      font-size: 0.85em; }
+      /* line 39, sass/style.scss */
+      .header .a-list li a {
+        color: white;
+        text-decoration: none;
+        display: block; }
 
-/* line 43, sass/style.scss */
+/* line 47, sass/style.scss */
 .top-main-header {
-  border-bottom: 2px solid #dee5eb;
-}
-
-/* line 46, sass/style.scss */
-.logo-row {
-  padding: 35px 0;
-  border-bottom: 1px solid #e5e8eb;
-}
+  border-bottom: 2px solid #dee5eb; }
 
 /* line 50, sass/style.scss */
+.logo-row {
+  padding: 35px 0;
+  border-bottom: 1px solid #e5e8eb; }
+
+/* line 54, sass/style.scss */
 .page-holder {
   width: 1100px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
+
+/* line 2, sass/_footer.scss */
+#bottom_bg .bottom {
+  background-color: #1296d9;
+  padding: 25px 0;
+  color: white; }
+  /* line 8, sass/_footer.scss */
+  #bottom_bg .bottom .logostr .company-name {
+    font-size: 2em;
+    line-height: 1; }
+  /* line 12, sass/_footer.scss */
+  #bottom_bg .bottom .logostr .slogan {
+    font-size: 0.9em;
+    line-height: 1.5;
+    font-weight: 300; }
+  /* line 19, sass/_footer.scss */
+  #bottom_bg .bottom .forlinks {
+    color: white;
+    font-size: 0.85em;
+    text-align: right;
+    margin-right: 50px; }
+    /* line 25, sass/_footer.scss */
+    #bottom_bg .bottom .forlinks a:link, #bottom_bg .bottom .forlinks a:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white; }
+    /* line 30, sass/_footer.scss */
+    #bottom_bg .bottom .forlinks a:hover {
+      color: #bde5fa; }
+    /* line 33, sass/_footer.scss */
+    #bottom_bg .bottom .forlinks .sep {
+      margin: 0 5px; }
+  /* line 38, sass/_footer.scss */
+  #bottom_bg .bottom .contact-list {
+    color: #bde5fa;
+    text-align: left;
+    font-size: 0.75em; }
+    /* line 43, sass/_footer.scss */
+    #bottom_bg .bottom .contact-list > div {
+      line-height: 1.4; }
+    /* line 47, sass/_footer.scss */
+    #bottom_bg .bottom .contact-list .value {
+      color: white; }
+/* line 52, sass/_footer.scss */
+#bottom_bg .footer {
+  background: #667373;
+  padding: 10px 0; }
+  /* line 56, sass/_footer.scss */
+  #bottom_bg .footer .copyright {
+    color: #d1d1d1;
+    font-size: 0.74em; }

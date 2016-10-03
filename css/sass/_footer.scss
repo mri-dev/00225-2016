@@ -1,0 +1,61 @@
+#bottom_bg {
+  .bottom {
+    background-color: $color-primary;
+    padding: 25px 0;
+    color: white;
+
+    .logostr{
+      .company-name{
+        font-size: 2em;
+        line-height: 1;
+      }
+      .slogan {
+        font-size: 0.9em;
+        line-height: 1.5;
+        font-weight: 300;
+      }
+    }
+
+    .forlinks{
+      color: white;
+      font-size: 0.85em;
+      text-align: right;
+      margin-right: 50px;
+
+      a:link, a:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: lighten($color-primary, 40%);
+      }
+      .sep {
+        margin: 0 5px;
+      }
+    }
+
+    .contact-list{
+      color: lighten($color-primary, 40%);
+      text-align: left;
+      font-size: 0.75em;
+
+      & > div {
+        line-height: 1.4;
+      }
+
+      .value{
+        color: white;
+      }
+    }
+  }
+  .footer{
+    background: $color-grey;
+    padding: 10px 0;
+
+    .copyright {
+      color: #d1d1d1;
+      font-size: 0.74em;
+    }
+  }
+}
