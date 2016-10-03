@@ -1,83 +1,83 @@
-/* Főmenü */
-/* line 4, sass/menu.scss */
-#menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 9, sass/menu.scss */
-#menu > li {
-  position: relative;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  height: 60px;
-  vertical-align: middle;
-  line-height: 60px;
-}
-/* line 18, sass/menu.scss */
-#menu > li a {
-  color: #667373;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  display: block;
-  padding-right: 12px;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  transition: all .4s;
-}
-/* line 30, sass/menu.scss */
-#menu > li a:hover {
-  color: #1296d9;
-}
-/* line 34, sass/menu.scss */
-#menu > li a.ac {
-  display: initial;
-  padding: 10px 15px;
-  font-size: 11px;
-  font-weight: 400;
-  margin-left: 25px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-/* line 44, sass/menu.scss */
-#menu > li a.ac.need-login {
-  background: #e31f24;
-  color: white;
-}
-/* line 50, sass/menu.scss */
-#menu > li > ul {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 60px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  min-width: 200px;
-  background: #fff;
-  -webkit-box-shadow: 0 2px 15px -5px black;
-  -moz-box-shadow: 0 2px 15px -5px black;
-  box-shadow: 0 2px 15px -5px black;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -webkit-border-radius: 0 0 5px 5px;
-  -moz-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
-}
-/* line 71, sass/menu.scss */
-#menu > li > ul li a {
-  text-transform: none;
-  line-height: 1;
-  padding: 25px 15px;
-  color: #222;
-  font-size: 12px;
-}
-/* line 81, sass/menu.scss */
-#menu > li:hover > ul {
-  display: block;
-}
+/* Főmenü */
+/* line 4, sass/menu.scss */
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 9, sass/menu.scss */
+#menu > li {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  height: 60px;
+  vertical-align: middle;
+  line-height: 60px;
+}
+/* line 18, sass/menu.scss */
+#menu > li a {
+  color: #667373;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  padding-right: 12px;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+/* line 30, sass/menu.scss */
+#menu > li a:hover {
+  color: #1296d9;
+}
+/* line 34, sass/menu.scss */
+#menu > li a.ac {
+  display: initial;
+  padding: 10px 15px;
+  font-size: 11px;
+  font-weight: 400;
+  margin-left: 25px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 44, sass/menu.scss */
+#menu > li a.ac.need-login {
+  background: #e31f24;
+  color: white;
+}
+/* line 50, sass/menu.scss */
+#menu > li > ul {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 200px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 15px -5px black;
+  -moz-box-shadow: 0 2px 15px -5px black;
+  box-shadow: 0 2px 15px -5px black;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+/* line 71, sass/menu.scss */
+#menu > li > ul li a {
+  text-transform: none;
+  line-height: 1;
+  padding: 25px 15px;
+  color: #222;
+  font-size: 12px;
+}
+/* line 81, sass/menu.scss */
+#menu > li:hover > ul {
+  display: block;
+}
