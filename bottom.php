@@ -6,11 +6,13 @@
 
 <div id="bottom_bg">
   <div class="footer-features-images">
-    <img src="templates/<?=$templatedir?>/images/ripemember.gif" width="50" height="50" >
-    <img src="templates/<?=$templatedir?>/images/huregmember.jpg" width="140" height"40" >
-    <img src="templates/<?=$templatedir?>/images/cpanelreseller.jpg">
-    <img src="templates/<?=$templatedir?>/images/rapidsslmember.gif">
-    <img src="templates/<?=$templatedir?>/images/payu_logo_left.png">
+    <div class="page-holder">
+      <img src="templates/<?=$templatedir?>/images/ripemember.gif" width="50" height="50" >
+      <img src="templates/<?=$templatedir?>/images/huregmember.jpg" width="140" height"40" >
+      <img src="templates/<?=$templatedir?>/images/cpanelreseller.jpg">
+      <img src="templates/<?=$templatedir?>/images/rapidsslmember.gif">
+      <img src="templates/<?=$templatedir?>/images/payu_logo_left.png">
+    </div>
   </div>
   <div class="bottom" align="center">
       <div class="page-holder">

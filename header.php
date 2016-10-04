@@ -28,6 +28,9 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="<?=$currentbase?>/templates/<?=$templatedir?>/css/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+
 <?php if($userssnews=="1"){ ?>
 <?php } ?>
 <?php if(file_exists(WORKDIR."/templates/$templatedir/includes/header_includes.php")){ include(WORKDIR."/templates/$templatedir/includes/header_includes.php"); }else if(file_exists(WORKDIR."/templates/common_files/includes/header_includes.php")){ include(WORKDIR."/templates/common_files/includes/header_includes.php"); } ?>
