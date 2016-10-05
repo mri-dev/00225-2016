@@ -144,6 +144,52 @@ a:hover {
   width: 70%;
   margin: 0 auto;
 
+  form {
+    .form-wrapper {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      padding: 5px;
+      vertical-align: middle;
+
+      &.search-list{
+        width: 15%;
+      }
+      &.search-button{
+        width: 20%;
+      }
+      &.search-input{
+        width: 65%;
+      }
+
+      input[type=text]{
+        color: $color-red; 
+      }
+
+      input, button{
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        border: 1px solid #cccccc;
+        color:#c1c1c1;
+        padding: 0 15px;
+        font-size: 1.2em;
+      }
+
+      button[type=submit]{
+        background: $color-green;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        i{
+          margin-right: 10px;
+        }
+      }
+    }
+
+  }
+
   .domain-links{
     display: flex;
     margin: 15px 0;
@@ -159,8 +205,8 @@ a:hover {
         color: white;
         font-weight: bold;
         text-align: center;
-        font-size: 0.85em;
-        padding: 12px 25px;
+        font-size: 0.95em;
+        padding: 8px 0;
         text-transform: uppercase;
 
         &:hover {
