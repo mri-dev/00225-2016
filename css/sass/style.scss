@@ -130,8 +130,7 @@ a:hover {
   padding: 35px 0;
   border-bottom: 1px solid #e5e8eb;
 }
-.page-holder,
-#content{
+.page-holder{
     width: $page-width;
     margin: 0 auto;
 }
@@ -163,14 +162,14 @@ a:hover {
       }
 
       input[type=text]{
-        color: $color-red; 
+        color: $color-red;
       }
 
       input, button{
         height: 50px;
         line-height: 50px;
         width: 100%;
-        border: 1px solid #cccccc;
+        border: 1px solid #cccfd1;
         color:#c1c1c1;
         padding: 0 15px;
         font-size: 1.2em;
@@ -201,16 +200,147 @@ a:hover {
 
       a{
         display: block;
-        background: #d1d1d1;
+        background: #cccfd1;
         color: white;
         font-weight: bold;
         text-align: center;
         font-size: 0.95em;
-        padding: 8px 0;
+        line-height: 1;
+        padding: 10px 0;
         text-transform: uppercase;
 
         &:hover {
-          background: #8c8c8c;
+          background: #878787;
+        }
+      }
+    }
+  }
+}
+
+.service-block-container{
+  background-color: white;
+  background-image: url('../images/global-map-overlay-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  border: 1px solid #e5e8eb;
+  border-left: none;
+  border-right: none;
+  overflow: hidden;
+  padding: 75px 0;
+
+  .services {
+    display: flex;
+    margin: 0 -25px;
+
+    & > .service-wrapper {
+      flex-basis: 25%;
+      padding: 25px;
+
+      .box {
+        position: relative;
+        padding: 15px;
+        padding-top: 35px;
+        border: 1px solid #e1e1e1;
+        background: rgba(255, 255, 255, 0.51);
+        width: 100%;
+        text-align: center;
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+        .price-holder{
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -40px;
+          background: #667373;
+          color: white;
+          text-align: center;
+          font-weight: bold;
+          margin: 0 auto;
+          font-size: 1.2em;
+          width: 80px;
+          height: 80px;
+          -webkit-border-radius: 80px;
+          -moz-border-radius: 80px;
+          border-radius: 80px;
+
+          .price {
+            padding: 22px 0;
+            line-height: 1.2;
+
+            .cycle {
+              font-size: 0.85em;
+            }
+          }
+        }
+
+        .title {
+          h2{
+            color: #667373;
+            font-weight: bold;
+            font-size: 1.3em;
+          }
+        }
+        .features {
+          margin: 0 10px;
+          font-size: 0.9em;
+
+          .feature {
+            margin: 5px 0;
+
+            img.ico {
+              float: left;
+              margin-right: 10px;
+            }
+
+            .text {
+              font-size: 0.9em;
+              line-height: 20px;
+              text-align: left;
+              color: #878787;
+            }
+          }
+        }
+        .action {
+          margin: 0 10px;
+          margin-top: 20px;
+
+          a, a:link, a:visited {
+            background: #667373;
+            display: block;
+            padding: 12px;
+            line-height: 1;
+            font-size: 0.8em;
+            text-align: center;
+            color: white;
+          }
+        }
+
+        &.style-blue {
+          .price-holder {
+            background: $color-primary;
+          }
+          .action a {
+            background: $color-primary;
+          }
+        }
+        &.style-red {
+          .price-holder {
+            background: $color-red;
+          }
+          .action a {
+            background: $color-red;
+          }
+        }
+        &.style-green {
+          .price-holder {
+            background: $color-green;
+          }
+          .action a {
+            background: $color-green;
+          }
         }
       }
     }

@@ -2,23 +2,209 @@
 <?=$top?>
 <!-- Contents /s -->
 <div class="homepage base-content">
-	<div class="domain-searcher">
-		<form method="post" action="<?=$base?>/spincheck.php" id="check" name="check" onsubmit="showObject(false,true);"><!--
-	 --><div class="form-wrapper search-input"><input type="text" maxlength="272" name="cSSld" id="cSSld" placeholder="Írja be a választott domain nevét"/></div><!--
-	 --><div class="form-wrapper search-list"><input list="end" name="endtag" size="4" placeholder=".HU"/></div><!--
-	 --><div class="form-wrapper search-button"><button type="submit" class="keresgomb" name="Submit"/><i class="fa fa-search"></i> KERESÉS</div>
-	 		<datalist id="end">
-					<option value=".hu">
-					<option value=".com">
-			</datalist>
-		</form>
-		<div class="domain-links">
-			<div class="link-wrapper"><a href="<?=$base?>/check.php">Új Domain</a></div>
-			<div class="link-wrapper"><a href="<?=$base?>/transcheck.php">Domain átkérés</a></div>
-			<div class="link-wrapper"><a href="<?=$base?>/pricingfull.php">Domain árlista</a></div>
-			<div class="link-wrapper"><a href="<?=$base?>/forsale.php">Eladó domainek</a></div>
+	<div class="page-holder">
+		<!-- Domain search -->
+		<div class="domain-searcher">
+			<form method="post" action="<?=$base?>/spincheck.php" id="check" name="check" onsubmit="showObject(false,true);"><!--
+		 --><div class="form-wrapper search-input"><input type="text" maxlength="272" name="cSSld" id="cSSld" placeholder="Írja be a választott domain nevét"/></div><!--
+		 --><div class="form-wrapper search-list"><input list="end" name="endtag" size="4" placeholder=".HU"/></div><!--
+		 --><div class="form-wrapper search-button"><button type="submit" class="keresgomb" name="Submit"/><i class="fa fa-search"></i> KERESÉS</div>
+		 		<datalist id="end">
+						<option value=".hu">
+						<option value=".com">
+				</datalist>
+			</form>
+			<div class="domain-links">
+				<div class="link-wrapper"><a href="<?=$base?>/check.php">Új Domain</a></div>
+				<div class="link-wrapper"><a href="<?=$base?>/transcheck.php">Domain átkérés</a></div>
+				<div class="link-wrapper"><a href="<?=$base?>/pricingfull.php">Domain árlista</a></div>
+				<div class="link-wrapper"><a href="<?=$base?>/forsale.php">Eladó domainek</a></div>
+			</div>
+		</div>
+		<!-- END: Domain search -->
+	</div>
+
+
+	<!-- VMWare Packs -->
+	<div class="service-block-container">
+		<div class="page-holder">
+			<div class="services">
+				<div class="service-wrapper">
+					<div class="box style-default">
+							<div class="price-holder">
+								<div class="price">
+									4000 Ft
+									<div class="cycle">
+										/ hó
+									</div>
+								</div>
+							</div>
+							<div class="title">
+								<h2>VMWare Minimal</h2>
+							</div>
+							<div class="image">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/serv-conf-minimal.png" alt="VMWare Minimal" />
+							</div>
+							<div class="features">
+								<div class="feature">
+									<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-cpu.png" class="ico" alt="CPU" />
+									<div class="text">1 Ghz CPU</div>
+								</div>
+								<div class="feature">
+									<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-ram.png" class="ico" alt="CPU" />
+									<div class="text">1 GB RAM</div>
+								</div>
+								<div class="feature">
+									<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-hdd.png" class="ico" alt="CPU" />
+									<div class="text">50 GB lemezterület</div>
+								</div>
+								<div class="feature">
+									<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-ip.png" class="ico" alt="CPU" />
+									<div class="text">1 db IP cím</div>
+								</div>
+								<div class="feature">
+									<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-brandwidth.png" class="ico" alt="CPU" />
+									<div class="text">Korlátlan adatforgalom</div>
+								</div>
+							</div>
+							<div class="action">
+								<a href="#">MEGRENDELEM</a>
+							</div>
+					</div>
+				</div>
+				<div class="service-wrapper">
+					<div class="box style-blue">
+						<div class="price-holder">
+							<div class="price">
+								4000 Ft
+								<div class="cycle">
+									/ hó
+								</div>
+							</div>
+						</div>
+						<div class="title">
+							<h2>VMWare Minimal</h2>
+						</div>
+						<div class="image">
+							<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/serv-conf-minimal.png" alt="VMWare Minimal" />
+						</div>
+						<div class="features">
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-cpu.png" class="ico" alt="CPU" />
+								<div class="text">1 Ghz CPU</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-ram.png" class="ico" alt="CPU" />
+								<div class="text">1 GB RAM</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-hdd.png" class="ico" alt="CPU" />
+								<div class="text">50 GB lemezterület</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-ip.png" class="ico" alt="CPU" />
+								<div class="text">1 db IP cím</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-brandwidth.png" class="ico" alt="CPU" />
+								<div class="text">Korlátlan adatforgalom</div>
+							</div>
+						</div>
+						<div class="action">
+							<a href="#">MEGRENDELEM</a>
+						</div>
+					</div>
+				</div>
+				<div class="service-wrapper">
+					<div class="box style-green">
+						<div class="price-holder">
+							<div class="price">
+								4000 Ft
+								<div class="cycle">
+									/ hó
+								</div>
+							</div>
+						</div>
+						<div class="title">
+							<h2>VMWare Minimal</h2>
+						</div>
+						<div class="image">
+							<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/serv-conf-minimal.png" alt="VMWare Minimal" />
+						</div>
+						<div class="features">
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-cpu.png" class="ico" alt="CPU" />
+								<div class="text">1 Ghz CPU</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-ram.png" class="ico" alt="CPU" />
+								<div class="text">1 GB RAM</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-hdd.png" class="ico" alt="CPU" />
+								<div class="text">50 GB lemezterület</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-ip.png" class="ico" alt="CPU" />
+								<div class="text">1 db IP cím</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-brandwidth.png" class="ico" alt="CPU" />
+								<div class="text">Korlátlan adatforgalom</div>
+							</div>
+						</div>
+						<div class="action">
+							<a href="#">MEGRENDELEM</a>
+						</div>
+					</div>
+				</div>
+				<div class="service-wrapper">
+					<div class="box style-red">
+						<div class="price-holder">
+							<div class="price">
+								4000 Ft
+								<div class="cycle">
+									/ hó
+								</div>
+							</div>
+						</div>
+						<div class="title">
+							<h2>VMWare Minimal</h2>
+						</div>
+						<div class="image">
+							<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/serv-conf-minimal.png" alt="VMWare Minimal" />
+						</div>
+						<div class="features">
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-cpu.png" class="ico" alt="CPU" />
+								<div class="text">1 Ghz CPU</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-ram.png" class="ico" alt="CPU" />
+								<div class="text">1 GB RAM</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-hdd.png" class="ico" alt="CPU" />
+								<div class="text">50 GB lemezterület</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-ip.png" class="ico" alt="CPU" />
+								<div class="text">1 db IP cím</div>
+							</div>
+							<div class="feature">
+								<img src="<?=$currentbase?>/templates/<?=$templatedir?>/images/feat-ico-brandwidth.png" class="ico" alt="CPU" />
+								<div class="text">Korlátlan adatforgalom</div>
+							</div>
+						</div>
+						<div class="action">
+							<a href="#">MEGRENDELEM</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	<!-- END: VMWare Pack -->
 </div>
 
 
