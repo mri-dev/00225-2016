@@ -7,8 +7,13 @@
     background-color: $color-primary;
     padding: 25px 0;
     color: white;
+    min-height: 130px;
+    height: 130px;
 
     .logostr{
+      position: absolute;
+      top: 0;
+      left: 15px;
       .company-name{
         font-size: 2em;
         line-height: 1;
@@ -23,8 +28,7 @@
     .forlinks{
       color: white;
       font-size: 0.85em;
-      text-align: right;
-      margin-right: 50px;
+      text-align: center;
 
       a:link, a:visited {
         text-transform: uppercase;
@@ -40,9 +44,13 @@
     }
 
     .contact-list{
+      position: absolute;
+      top: 0;
+      right: -100px;
+
       color: lighten($color-primary, 40%);
       text-align: left;
-      font-size: 0.75em;
+      font-size: 0.85em;
 
       & > div {
         line-height: 1.4;

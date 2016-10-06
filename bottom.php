@@ -17,15 +17,13 @@
   <div class="bottom" align="center">
       <div class="page-holder">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-12">
             <div class="logostr">
               <div class="company-name">
                 <strong>Server</strong>Land
               </div>
               <div class="slogan">webhosting serverhosting</div>
             </div>
-          </div>
-          <div class="col-md-7">
             <div class="forlinks">
                 <a href="<?=$base?>/index.php"><?=BMENU1?></a>
                 <span class="sep">|</span>
@@ -51,8 +49,6 @@
                 <?php } ?>
                 <a href="<?=$base?>/terms.php"><?=BMENU11?></a>
             </div>
-          </div>
-          <div class="col-md-3">
             <div class="contact-list">
               <div>Telefon: <span class="value"><?php echo $this->data['companyphone']; ?></span></div>
               <div>Fax: <span class="value"><?php echo $this->data['companyfax']; ?></span></div>

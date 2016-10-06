@@ -4,11 +4,28 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.55em;
-    color: #434343;
+    color: #616263;
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 	  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn.btn-default {
+  background: #667373;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: none;
+  border: 1px solid darken(#667373, 20%);
+
+  &:hover {
+    background: $color-primary;
+    border: 1px solid darken($color-primary, 20%);
+  }
+  &:active:hover {
+    background: darken($color-primary, 10%);
+    color: white;
+  }
 }
 
 a:link, a:visited {
@@ -61,7 +78,7 @@ a:hover {
     }
 }
 .top-main-header{
-  border-bottom: 2px solid #dee5eb;
+  border-bottom: 5px solid #dee5eb;
   .contact-info{
     position: relative;
     text-align: right;
@@ -142,6 +159,7 @@ a:hover {
 .domain-searcher{
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 25px;
 
   form {
     .form-wrapper {
@@ -217,6 +235,168 @@ a:hover {
   }
 }
 
+.adv-block-container{
+  position: relative;
+  background-color: #e6f0fa;
+  background-image: url('../images/adv-block-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+
+  .adv-wrapper{
+    padding: 40px 0 60px 0;
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      pointer-events: none;
+      background-image: url('../images/cloud-bottom.svg');
+      background-repeat: repeat-x;;
+      background-size: contain;
+      background-position: bottom center;
+    }
+
+    .cont-feat{
+      padding: 50px 0 20px 0;
+
+      .image{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+
+        .texts{
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 0;
+
+          .title {
+            position: absolute;
+            font-size: 1.25em;
+            left: 5px;
+            top: -40px;
+            color: desaturate($color-red, 15);
+          }
+
+          .list {
+            border-left: 1px solid #cccfd1;
+            position: absolute;
+            top: -25px;
+            left: 230px;
+
+            ul, li {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+            }
+
+            ul {
+              margin-top: -25px;
+              li {
+                color: #878787;
+                span.f {
+                  color: #5a5a5a;
+                  font-weight: bold;
+                }
+
+                line-height: 50px;
+
+                &.cpu,
+                &.ram,
+                &.hdd,
+                &.cpu {
+                  position: relative;
+                  padding-left: 35px;
+
+                  &:before {
+                    position: absolute;
+                    content:"";
+                    width: 30px;
+                    top: 25px;
+                    left: 0;
+                    height: 1px;
+                    background: #cccfd1;
+                  }
+                }
+
+                &.ram{
+                  padding-left: 15px;
+                  &:before {
+                    width: 10px;
+                  }
+                }
+                &.hdd{
+                  padding-left: 65px;
+                  &:before {
+                    width: 60px;
+                  }
+                }
+
+                &.ip{
+                  position: absolute;
+                  left: -5px;
+                }
+              }
+            }
+          }
+        }
+
+        img {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .cont-text{
+      padding: 25px;
+
+      h1, h2 {
+        margin: 5px 0;
+        font-weight: bold;
+        color: #424242
+      }
+
+      h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: 2em;
+        letter-spacing: -1px;
+      }
+
+      .description {
+        font-size: 1.15em;
+        color: #5c5c5c;
+        line-height: 1.2;
+
+      }
+
+      .offer {
+        color: $color-primary;
+        margin-top: 20px;
+        font-size: 1.4em;
+        line-height: 1.2;
+
+        .price {
+          font-weight: bold;
+          font-size: 3em;
+        }
+      }
+    }
+
+    & > div.row > div[class*=col-md-6]:first-child{
+      border-right: 1px solid #cccfd1;
+    }
+  }
+}
+
 .service-block-container{
   background-color: white;
   background-image: url('../images/global-map-overlay-bg.jpg');
@@ -241,7 +421,7 @@ a:hover {
         padding: 15px;
         padding-top: 35px;
         border: 1px solid #e1e1e1;
-        background: rgba(255, 255, 255, 0.51);
+        background: rgba(255, 255, 255, 0.5);
         width: 100%;
         text-align: center;
 
@@ -344,6 +524,32 @@ a:hover {
         }
       }
     }
+  }
+}
+
+table {
+  width: 100%;
+  margin: 0;
+}
+
+table#mainData {
+  width: $page-width;
+  margin: 0 auto;
+
+  td#tablehead{
+    padding: 25px 0;
+
+    h1 {
+      font-size: 1.8em;
+      margin: 0;
+      font-weight: bold;
+      color: #444444;
+      line-height: 1.2;
+    }
+  }
+
+  td#mainTD {
+    padding-top: 20px;
   }
 }
 

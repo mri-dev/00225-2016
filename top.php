@@ -61,8 +61,6 @@
 		</div>
 	</div>
 </div>
-
-<div style="height:30px; clear:both;"></div>
 <div class="curves"></div>
 <div id="content">
 <table id="doc" cellspacing="0" cellpadding="0">
