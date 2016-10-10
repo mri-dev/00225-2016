@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
-/* line 3, sass/style.scss */
+/* line 3, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 body {
   margin: 0;
   padding: 0;
@@ -8,349 +8,480 @@ body {
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
-/* line 14, sass/style.scss */
-.btn.btn-default {
+/* line 14, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.btn.btn-default, .inpSubmit {
   background: #667373;
   color: #fff;
   font-weight: normal;
   text-shadow: none;
-  border: 1px solid #363d3d; }
-  /* line 21, sass/style.scss */
-  .btn.btn-default:hover {
-    background: #1296d9;
-    border: 1px solid #0a557b; }
-  /* line 25, sass/style.scss */
-  .btn.btn-default:active:hover {
-    background: #0e75aa;
-    color: white; }
+  border: 1px solid #363d3d;
+}
 
-/* line 31, sass/style.scss */
+/* line 21, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.btn.btn-default:hover, .inpSubmit:hover {
+  background: #1296d9;
+  border: 1px solid #0a557b;
+}
+
+/* line 25, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.btn.btn-default:active:hover, .inpSubmit:active:hover {
+  background: #0e75aa;
+  color: white;
+}
+
+/* line 31, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 a:link, a:visited {
   color: #1296d9;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-/* line 35, sass/style.scss */
+/* line 35, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 a:hover {
-  color: #0e75aa; }
+  color: #0e75aa;
+}
 
-/* line 38, sass/style.scss */
+/* line 38, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 .wrapper {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-/* line 43, sass/style.scss */
+/* line 43, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 #blockDiv {
-  display: none; }
+  display: none;
+}
 
-/* line 47, sass/style.scss */
+/* line 47, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+input[type=text] {
+  border: 1px solid #cccfd1;
+  color: #667373;
+  padding: 0 15px;
+  line-height: 40px;
+  font-size: 1.2em;
+}
+
+/* line 55, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 .header {
   background: #1296d9;
-  padding: 1px 0; }
-  /* line 50, sass/style.scss */
-  .header .a-list {
-    float: right;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    /* line 56, sass/style.scss */
-    .header .a-list li {
-      color: white;
-      display: inline-block;
-      *display: inline;
-      zoom: 1;
-      border-left: 1px solid #77caf4;
-      padding: 8px 14px;
-      font-size: 0.85em; }
-      /* line 65, sass/style.scss */
-      .header .a-list li a {
-        color: white;
-        text-decoration: none;
-        display: block; }
-        /* line 70, sass/style.scss */
-        .header .a-list li a .fa-stack {
-          font-size: 8px; }
-        /* line 73, sass/style.scss */
-        .header .a-list li a i[class*=fa-info] {
-          font-size: 8px !important; }
+  padding: 1px 0;
+}
 
-/* line 80, sass/style.scss */
+/* line 58, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.header .a-list {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 64, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.header .a-list li {
+  color: white;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  border-left: 1px solid #77caf4;
+  padding: 8px 14px;
+  font-size: 0.85em;
+}
+
+/* line 73, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.header .a-list li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 78, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.header .a-list li a .fa-stack {
+  font-size: 8px;
+}
+
+/* line 81, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.header .a-list li a i[class*=fa-info] {
+  font-size: 8px !important;
+}
+
+/* line 88, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 .top-main-header {
-  border-bottom: 5px solid #dee5eb; }
-  /* line 82, sass/style.scss */
-  .top-main-header .contact-info {
-    position: relative;
-    text-align: right;
-    line-height: 1;
-    margin-top: 12px; }
-    /* line 87, sass/style.scss */
-    .top-main-header .contact-info .res-ico {
-      position: absolute;
-      left: 0;
-      bottom: 0; }
-      /* line 91, sass/style.scss */
-      .top-main-header .contact-info .res-ico.res-ico-envelope {
-        z-index: 10;
-        left: -42px; }
-        /* line 94, sass/style.scss */
-        .top-main-header .contact-info .res-ico.res-ico-envelope i {
-          color: #1296d9;
-          font-size: 32px; }
-      /* line 99, sass/style.scss */
-      .top-main-header .contact-info .res-ico.res-ico-phone {
-        left: -20px;
-        bottom: 16px;
-        background: #111111;
-        padding: 0 5px;
-        z-index: 20;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        -webkit-box-shadow: 0 0 0 2px #fff;
-        -moz-box-shadow: 0 0 0 2px #fff;
-        box-shadow: 0 0 0 2px #fff; }
-        /* line 111, sass/style.scss */
-        .top-main-header .contact-info .res-ico.res-ico-phone i {
-          line-height: 22px;
-          color: white;
-          font-size: 14px; }
-        /* line 117, sass/style.scss */
-        .top-main-header .contact-info .res-ico.res-ico-phone:after {
-          content: "";
-          position: absolute;
-          pointer-events: none;
-          width: 0;
-          height: 0;
-          bottom: -16px;
-          right: -5px;
-          border-style: solid;
-          border-width: 10px 5px;
-          border-color: #111111 transparent transparent transparent;
-          -moz-transform: rotate(-25deg);
-          -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg); }
-    /* line 134, sass/style.scss */
-    .top-main-header .contact-info .phone {
-      color: black;
-      font-size: 1.5em; }
-    /* line 139, sass/style.scss */
-    .top-main-header .contact-info .email a:link, .top-main-header .contact-info .email a:visited {
-      font-size: 0.9em;
-      color: #1296d9; }
+  border-bottom: 5px solid #dee5eb;
+}
 
-/* line 146, sass/style.scss */
+/* line 90, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.top-main-header .contact-info {
+  position: relative;
+  text-align: right;
+  line-height: 1;
+  margin-top: 12px;
+}
+
+/* line 95, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.top-main-header .contact-info .res-ico {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* line 99, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.top-main-header .contact-info .res-ico.res-ico-envelope {
+  z-index: 10;
+  left: -42px;
+}
+
+/* line 102, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.top-main-header .contact-info .res-ico.res-ico-envelope i {
+  color: #1296d9;
+  font-size: 32px;
+}
+
+/* line 107, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.top-main-header .contact-info .res-ico.res-ico-phone {
+  left: -20px;
+  bottom: 16px;
+  background: #111111;
+  padding: 0 5px;
+  z-index: 20;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 2px #fff;
+  -moz-box-shadow: 0 0 0 2px #fff;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* line 119, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.top-main-header .contact-info .res-ico.res-ico-phone i {
+  line-height: 22px;
+  color: white;
+  font-size: 14px;
+}
+
+/* line 125, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.top-main-header .contact-info .res-ico.res-ico-phone:after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  bottom: -16px;
+  right: -5px;
+  border-style: solid;
+  border-width: 10px 5px;
+  border-color: #111111 transparent transparent transparent;
+  -moz-transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+
+/* line 142, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.top-main-header .contact-info .phone {
+  color: black;
+  font-size: 1.5em;
+}
+
+/* line 147, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.top-main-header .contact-info .email a:link, .top-main-header .contact-info .email a:visited {
+  font-size: 0.9em;
+  color: #1296d9;
+}
+
+/* line 154, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 .logo-row {
   padding: 35px 0;
-  border-bottom: 1px solid #e5e8eb; }
+  border-bottom: 1px solid #e5e8eb;
+}
 
-/* line 150, sass/style.scss */
+/* line 158, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 .page-holder {
   width: 1100px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-/* line 159, sass/style.scss */
+/* line 167, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 .domain-searcher {
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 25px; }
-  /* line 165, sass/style.scss */
-  .domain-searcher form .form-wrapper {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-    padding: 5px;
-    vertical-align: middle; }
-    /* line 172, sass/style.scss */
-    .domain-searcher form .form-wrapper.search-list {
-      width: 15%; }
-    /* line 175, sass/style.scss */
-    .domain-searcher form .form-wrapper.search-button {
-      width: 20%; }
-    /* line 178, sass/style.scss */
-    .domain-searcher form .form-wrapper.search-input {
-      width: 65%; }
-    /* line 182, sass/style.scss */
-    .domain-searcher form .form-wrapper input[type=text] {
-      color: #e31f24; }
-    /* line 186, sass/style.scss */
-    .domain-searcher form .form-wrapper input, .domain-searcher form .form-wrapper button {
-      height: 50px;
-      line-height: 50px;
-      width: 100%;
-      border: 1px solid #cccfd1;
-      color: #c1c1c1;
-      padding: 0 15px;
-      font-size: 1.2em; }
-    /* line 196, sass/style.scss */
-    .domain-searcher form .form-wrapper button[type=submit] {
-      background: #a2c51a;
-      color: white;
-      font-weight: bold;
-      text-transform: uppercase; }
-      /* line 202, sass/style.scss */
-      .domain-searcher form .form-wrapper button[type=submit] i {
-        margin-right: 10px; }
-  /* line 210, sass/style.scss */
-  .domain-searcher .domain-links {
-    display: flex;
-    margin: 15px 0;
-    justify-content: center; }
-    /* line 215, sass/style.scss */
-    .domain-searcher .domain-links .link-wrapper {
-      padding: 0 5px;
-      flex-basis: 25%; }
-      /* line 219, sass/style.scss */
-      .domain-searcher .domain-links .link-wrapper a {
-        display: block;
-        background: #cccfd1;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        font-size: 0.95em;
-        line-height: 1;
-        padding: 10px 0;
-        text-transform: uppercase; }
-        /* line 230, sass/style.scss */
-        .domain-searcher .domain-links .link-wrapper a:hover {
-          background: #878787; }
+  margin-bottom: 25px;
+}
 
-/* line 238, sass/style.scss */
+/* line 173, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher form .form-wrapper {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+/* line 180, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher form .form-wrapper.search-list {
+  width: 15%;
+}
+
+/* line 183, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher form .form-wrapper.search-button {
+  width: 20%;
+}
+
+/* line 186, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher form .form-wrapper.search-input {
+  width: 65%;
+}
+
+/* line 190, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher form .form-wrapper input[type=text] {
+  color: #e31f24;
+}
+
+/* line 194, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher form .form-wrapper input, .domain-searcher form .form-wrapper button {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  border: 1px solid #cccfd1;
+  color: #c1c1c1;
+  padding: 0 15px;
+  font-size: 1.2em;
+}
+
+/* line 204, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher form .form-wrapper button[type=submit] {
+  background: #A2C51A;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 210, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher form .form-wrapper button[type=submit] i {
+  margin-right: 10px;
+}
+
+/* line 218, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher .domain-links {
+  display: flex;
+  margin: 15px 0;
+  justify-content: center;
+}
+
+/* line 223, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher .domain-links .link-wrapper {
+  padding: 0 5px;
+  flex-basis: 25%;
+}
+
+/* line 227, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher .domain-links .link-wrapper a {
+  display: block;
+  background: #cccfd1;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.95em;
+  line-height: 1;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+/* line 238, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.domain-searcher .domain-links .link-wrapper a:hover {
+  background: #878787;
+}
+
+/* line 246, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 .adv-block-container {
   position: relative;
   background-color: #e6f0fa;
   background-image: url("../images/adv-block-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top right; }
-  /* line 246, sass/style.scss */
-  .adv-block-container .adv-wrapper {
-    padding: 40px 0 60px 0; }
-    /* line 249, sass/style.scss */
-    .adv-block-container .adv-wrapper .overlay {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 56px;
-      pointer-events: none;
-      background-image: url("../images/cloud-bottom.svg");
-      background-repeat: repeat-x;
-      background-size: contain;
-      background-position: bottom center; }
-    /* line 263, sass/style.scss */
-    .adv-block-container .adv-wrapper .cont-feat {
-      padding: 50px 0 20px 0; }
-      /* line 266, sass/style.scss */
-      .adv-block-container .adv-wrapper .cont-feat .image {
-        position: relative;
-        width: 80%;
-        margin: 0 auto; }
-        /* line 271, sass/style.scss */
-        .adv-block-container .adv-wrapper .cont-feat .image .texts {
-          position: absolute;
-          width: 100%;
-          left: 0;
-          top: 0; }
-          /* line 277, sass/style.scss */
-          .adv-block-container .adv-wrapper .cont-feat .image .texts .title {
-            position: absolute;
-            font-size: 1.25em;
-            left: 5px;
-            top: -40px;
-            color: #d03236; }
-          /* line 285, sass/style.scss */
-          .adv-block-container .adv-wrapper .cont-feat .image .texts .list {
-            border-left: 1px solid #cccfd1;
-            position: absolute;
-            top: -25px;
-            left: 230px; }
-            /* line 291, sass/style.scss */
-            .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul, .adv-block-container .adv-wrapper .cont-feat .image .texts .list li {
-              list-style: none;
-              margin: 0;
-              padding: 0; }
-            /* line 297, sass/style.scss */
-            .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul {
-              margin-top: -25px; }
-              /* line 299, sass/style.scss */
-              .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li {
-                color: #878787;
-                line-height: 50px; }
-                /* line 301, sass/style.scss */
-                .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li span.f {
-                  color: #5a5a5a;
-                  font-weight: bold; }
-                /* line 311, sass/style.scss */
-                .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.cpu, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.ram, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.hdd, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.cpu {
-                  position: relative;
-                  padding-left: 35px; }
-                  /* line 315, sass/style.scss */
-                  .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.cpu:before, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.ram:before, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.hdd:before, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.cpu:before {
-                    position: absolute;
-                    content: "";
-                    width: 30px;
-                    top: 25px;
-                    left: 0;
-                    height: 1px;
-                    background: #cccfd1; }
-                /* line 326, sass/style.scss */
-                .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.ram {
-                  padding-left: 15px; }
-                  /* line 328, sass/style.scss */
-                  .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.ram:before {
-                    width: 10px; }
-                /* line 332, sass/style.scss */
-                .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.hdd {
-                  padding-left: 65px; }
-                  /* line 334, sass/style.scss */
-                  .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.hdd:before {
-                    width: 60px; }
-                /* line 339, sass/style.scss */
-                .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.ip {
-                  position: absolute;
-                  left: -5px; }
-        /* line 348, sass/style.scss */
-        .adv-block-container .adv-wrapper .cont-feat .image img {
-          width: 100%;
-          max-width: 100%; }
-    /* line 355, sass/style.scss */
-    .adv-block-container .adv-wrapper .cont-text {
-      padding: 25px; }
-      /* line 358, sass/style.scss */
-      .adv-block-container .adv-wrapper .cont-text h1, .adv-block-container .adv-wrapper .cont-text h2 {
-        margin: 5px 0;
-        font-weight: bold;
-        color: #424242; }
-      /* line 364, sass/style.scss */
-      .adv-block-container .adv-wrapper .cont-text h1 {
-        font-size: 3em;
-        text-transform: uppercase; }
-      /* line 369, sass/style.scss */
-      .adv-block-container .adv-wrapper .cont-text h2 {
-        font-size: 2em;
-        letter-spacing: -1px; }
-      /* line 374, sass/style.scss */
-      .adv-block-container .adv-wrapper .cont-text .description {
-        font-size: 1.15em;
-        color: #5c5c5c;
-        line-height: 1.2; }
-      /* line 381, sass/style.scss */
-      .adv-block-container .adv-wrapper .cont-text .offer {
-        color: #1296d9;
-        margin-top: 20px;
-        font-size: 1.4em;
-        line-height: 1.2; }
-        /* line 387, sass/style.scss */
-        .adv-block-container .adv-wrapper .cont-text .offer .price {
-          font-weight: bold;
-          font-size: 3em; }
-    /* line 394, sass/style.scss */
-    .adv-block-container .adv-wrapper > div.row > div[class*=col-md-6]:first-child {
-      border-right: 1px solid #cccfd1; }
+  background-position: top right;
+}
 
-/* line 400, sass/style.scss */
+/* line 254, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper {
+  padding: 40px 0 60px 0;
+}
+
+/* line 257, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .overlay {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  pointer-events: none;
+  background-image: url("../images/cloud-bottom.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+/* line 271, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat {
+  padding: 50px 0 20px 0;
+}
+
+/* line 274, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 279, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* line 285, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .title {
+  position: absolute;
+  font-size: 1.25em;
+  left: 5px;
+  top: -40px;
+  color: #d03236;
+}
+
+/* line 293, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list {
+  border-left: 1px solid #cccfd1;
+  position: absolute;
+  top: -25px;
+  left: 230px;
+}
+
+/* line 299, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul, .adv-block-container .adv-wrapper .cont-feat .image .texts .list li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 305, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul {
+  margin-top: -25px;
+}
+
+/* line 307, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li {
+  color: #878787;
+  line-height: 50px;
+}
+
+/* line 309, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li span.f {
+  color: #5a5a5a;
+  font-weight: bold;
+}
+
+/* line 316, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.cpu, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.ram, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.hdd, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.cpu {
+  position: relative;
+  padding-left: 35px;
+}
+
+/* line 323, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.cpu:before, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.ram:before, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.hdd:before, .adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.cpu:before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  top: 25px;
+  left: 0;
+  height: 1px;
+  background: #cccfd1;
+}
+
+/* line 334, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.ram {
+  padding-left: 15px;
+}
+
+/* line 336, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.ram:before {
+  width: 10px;
+}
+
+/* line 340, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.hdd {
+  padding-left: 65px;
+}
+
+/* line 342, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.hdd:before {
+  width: 60px;
+}
+
+/* line 347, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image .texts .list ul li.ip {
+  position: absolute;
+  left: -5px;
+}
+
+/* line 356, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-feat .image img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 363, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-text {
+  padding: 25px;
+}
+
+/* line 366, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-text h1, .adv-block-container .adv-wrapper .cont-text h2 {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #424242;
+}
+
+/* line 372, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-text h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+/* line 377, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-text h2 {
+  font-size: 2em;
+  letter-spacing: -1px;
+}
+
+/* line 382, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-text .description {
+  font-size: 1.15em;
+  color: #5c5c5c;
+  line-height: 1.2;
+}
+
+/* line 389, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-text .offer {
+  color: #1296d9;
+  margin-top: 20px;
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+/* line 395, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper .cont-text .offer .price {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* line 402, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.adv-block-container .adv-wrapper > div.row > div[class*=col-md-6]:first-child {
+  border-right: 1px solid #cccfd1;
+}
+
+/* line 408, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 .service-block-container {
   background-color: white;
   background-image: url("../images/global-map-overlay-bg.jpg");
@@ -360,188 +491,621 @@ a:hover {
   border-left: none;
   border-right: none;
   overflow: hidden;
-  padding: 75px 0; }
-  /* line 411, sass/style.scss */
-  .service-block-container .services {
-    display: flex;
-    margin: 0 -25px; }
-    /* line 415, sass/style.scss */
-    .service-block-container .services > .service-wrapper {
-      flex-basis: 25%;
-      padding: 25px; }
-      /* line 419, sass/style.scss */
-      .service-block-container .services > .service-wrapper .box {
-        position: relative;
-        padding: 15px;
-        padding-top: 35px;
-        border: 1px solid #e1e1e1;
-        background: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        text-align: center;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px; }
-        /* line 432, sass/style.scss */
-        .service-block-container .services > .service-wrapper .box .price-holder {
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: -40px;
-          background: #667373;
-          color: white;
-          text-align: center;
-          font-weight: bold;
-          margin: 0 auto;
-          font-size: 1.2em;
-          width: 80px;
-          height: 80px;
-          -webkit-border-radius: 80px;
-          -moz-border-radius: 80px;
-          border-radius: 80px; }
-          /* line 449, sass/style.scss */
-          .service-block-container .services > .service-wrapper .box .price-holder .price {
-            padding: 22px 0;
-            line-height: 1.2; }
-            /* line 453, sass/style.scss */
-            .service-block-container .services > .service-wrapper .box .price-holder .price .cycle {
-              font-size: 0.85em; }
-        /* line 460, sass/style.scss */
-        .service-block-container .services > .service-wrapper .box .title h2 {
-          color: #667373;
-          font-weight: bold;
-          font-size: 1.3em; }
-        /* line 466, sass/style.scss */
-        .service-block-container .services > .service-wrapper .box .features {
-          margin: 0 10px;
-          font-size: 0.9em; }
-          /* line 470, sass/style.scss */
-          .service-block-container .services > .service-wrapper .box .features .feature {
-            margin: 5px 0; }
-            /* line 473, sass/style.scss */
-            .service-block-container .services > .service-wrapper .box .features .feature img.ico {
-              float: left;
-              margin-right: 10px; }
-            /* line 478, sass/style.scss */
-            .service-block-container .services > .service-wrapper .box .features .feature .text {
-              font-size: 0.9em;
-              line-height: 20px;
-              text-align: left;
-              color: #878787; }
-        /* line 486, sass/style.scss */
-        .service-block-container .services > .service-wrapper .box .action {
-          margin: 0 10px;
-          margin-top: 20px; }
-          /* line 490, sass/style.scss */
-          .service-block-container .services > .service-wrapper .box .action a, .service-block-container .services > .service-wrapper .box .action a:link, .service-block-container .services > .service-wrapper .box .action a:visited {
-            background: #667373;
-            display: block;
-            padding: 12px;
-            line-height: 1;
-            font-size: 0.8em;
-            text-align: center;
-            color: white; }
-        /* line 502, sass/style.scss */
-        .service-block-container .services > .service-wrapper .box.style-blue .price-holder {
-          background: #1296d9; }
-        /* line 505, sass/style.scss */
-        .service-block-container .services > .service-wrapper .box.style-blue .action a {
-          background: #1296d9; }
-        /* line 510, sass/style.scss */
-        .service-block-container .services > .service-wrapper .box.style-red .price-holder {
-          background: #e31f24; }
-        /* line 513, sass/style.scss */
-        .service-block-container .services > .service-wrapper .box.style-red .action a {
-          background: #e31f24; }
-        /* line 518, sass/style.scss */
-        .service-block-container .services > .service-wrapper .box.style-green .price-holder {
-          background: #a2c51a; }
-        /* line 521, sass/style.scss */
-        .service-block-container .services > .service-wrapper .box.style-green .action a {
-          background: #a2c51a; }
+  padding: 75px 0;
+}
 
-/* line 530, sass/style.scss */
-table {
+/* line 419, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services {
+  display: flex;
+  margin: 0 -25px;
+}
+
+/* line 423, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper {
+  flex-basis: 25%;
+  padding: 25px;
+}
+
+/* line 427, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box {
+  position: relative;
+  padding: 15px;
+  padding-top: 35px;
+  border: 1px solid #e1e1e1;
+  background: rgba(255, 255, 255, 0.5);
   width: 100%;
-  margin: 0; }
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
 
-/* line 535, sass/style.scss */
+/* line 440, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box .price-holder {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -40px;
+  background: #667373;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+  font-size: 1.2em;
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+}
+
+/* line 457, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box .price-holder .price {
+  padding: 22px 0;
+  line-height: 1.2;
+}
+
+/* line 461, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box .price-holder .price .cycle {
+  font-size: 0.85em;
+}
+
+/* line 468, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box .title h2 {
+  color: #667373;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* line 474, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box .features {
+  margin: 0 10px;
+  font-size: 0.9em;
+}
+
+/* line 478, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box .features .feature {
+  margin: 5px 0;
+}
+
+/* line 481, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box .features .feature img.ico {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 486, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box .features .feature .text {
+  font-size: 0.9em;
+  line-height: 20px;
+  text-align: left;
+  color: #878787;
+}
+
+/* line 494, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box .action {
+  margin: 0 10px;
+  margin-top: 20px;
+}
+
+/* line 498, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box .action a, .service-block-container .services > .service-wrapper .box .action a:link, .service-block-container .services > .service-wrapper .box .action a:visited {
+  background: #667373;
+  display: block;
+  padding: 12px;
+  line-height: 1;
+  font-size: 0.8em;
+  text-align: center;
+  color: white;
+}
+
+/* line 510, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box.style-blue .price-holder {
+  background: #1296d9;
+}
+
+/* line 513, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box.style-blue .action a {
+  background: #1296d9;
+}
+
+/* line 518, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box.style-red .price-holder {
+  background: #e31f24;
+}
+
+/* line 521, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box.style-red .action a {
+  background: #e31f24;
+}
+
+/* line 526, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box.style-green .price-holder {
+  background: #A2C51A;
+}
+
+/* line 529, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.service-block-container .services > .service-wrapper .box.style-green .action a {
+  background: #A2C51A;
+}
+
+/* line 537, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.red {
+  color: #e31f24;
+}
+
+/* line 540, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.ac {
+  text-align: center;
+}
+
+/* line 543, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.ar {
+  text-align: right;
+}
+
+/* line 546, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.al {
+  text-align: left;
+}
+
+/* line 549, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.alc {
+  margin: 0 auto;
+}
+
+/* line 552, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.vlt {
+  vertical-align: top;
+}
+
+/* line 555, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.vlm {
+  vertical-align: middle;
+}
+
+/* line 558, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.vlb {
+  vertical-align: bottom;
+}
+
+/* line 564, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+fieldset legend {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  margin: 0;
+  height: auto;
+}
+
+/* line 573, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.divblock {
+  display: block;
+}
+
+/* line 577, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table {
+  margin: 0 auto;
+}
+
+/* line 580, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.width-100, table#doc {
+  width: 100%;
+}
+
+/* line 587, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.transcheck td {
+  padding: 10px 0px;
+}
+
+/* line 594, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+#checkpage table td {
+  padding: 10px 0;
+}
+
+/* line 599, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+#checkpage .domain-check-form {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 603, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+#checkpage .domain-check-form .inpSubmit {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* line 613, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.error_f {
+  color: red;
+  padding: 8px 0;
+  font-size: 0.8em;
+}
+
+/* line 619, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.success {
+  background: #A2C51A;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* line 627, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.tip-wrap {
+  background: #667373;
+  color: #e6e6e6;
+  font-size: 0.9em;
+  padding: 5px 8px;
+  line-height: 1.4;
+}
+
+/* line 634, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.tip-wrap .tip-title {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* line 641, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 table#mainData {
   width: 1100px;
-  margin: 0 auto; }
-  /* line 539, sass/style.scss */
-  table#mainData td#tablehead {
-    padding: 25px 0; }
-    /* line 542, sass/style.scss */
-    table#mainData td#tablehead h1 {
-      font-size: 1.8em;
-      margin: 0;
-      font-weight: bold;
-      color: #444444;
-      line-height: 1.2; }
-  /* line 551, sass/style.scss */
-  table#mainData td#mainTD {
-    padding-top: 20px; }
+  margin: 0 auto;
+}
 
-/* line 2, sass/_footer.scss */
+/* line 645, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table#mainData td#tablehead {
+  padding: 25px 0;
+}
+
+/* line 648, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table#mainData td#tablehead h1 {
+  font-size: 1.8em;
+  margin: 0;
+  font-weight: bold;
+  color: #444444;
+  line-height: 1.2;
+}
+
+/* line 657, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table#mainData td#mainTD {
+  padding-top: 20px;
+}
+
+/* line 662, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.pkgtable {
+  width: 100%;
+  border: 1px solid #667373;
+}
+
+/* line 665, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.pkgtable td {
+  padding: 8px;
+}
+
+/* line 668, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.pkgtable td.pkgtabletitle {
+  background: #667373;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 675, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.pkgtable td.descr {
+  background: #f6f6f6;
+  border-right: 1px solid #dadada;
+  width: 75%;
+  color: #676767;
+}
+
+/* line 681, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.pkgtable td.order {
+  padding: 0;
+  vertical-align: bottom;
+}
+
+/* line 686, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.pkgtable table {
+  width: 100%;
+}
+
+/* line 692, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.price td.term {
+  font-size: 0.9em;
+  color: black;
+}
+
+/* line 696, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.price td.price {
+  text-align: center;
+  font-weight: bold;
+  background: #1296d9;
+  color: white;
+}
+
+/* line 703, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.price td {
+  border-bottom: 1px dashed #d7d7d7;
+}
+
+/* line 707, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.price tr:first-child td {
+  border-top: 1px dashed #d7d7d7;
+}
+
+/* line 711, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.price tr:last-child td {
+  border-bottom: none;
+}
+
+/* line 717, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.data.alc td.boxtitle {
+  font-size: 1.3em;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+/* line 725, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+table.data.alc td select {
+  padding: 10px;
+  border: 1px solid #d7d7d7;
+}
+
+/* line 731, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+a.inplink {
+  display: block;
+  background: #A2C51A;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px;
+  color: white;
+}
+
+/* line 741, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+a.inplink:hover {
+  background: #7d9814;
+}
+
+/* line 746, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.underline {
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  border-bottom: 5px solid #e8e8e8;
+}
+
+/* line 752, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 763, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.tlds table tr td {
+  border-bottom: 1px solid #d3d3d3;
+  padding: 5px 0;
+}
+
+/* line 767, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.tlds table tr td p {
+  margin: 0;
+}
+
+/* line 775, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.unchecked, .checked {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+/* line 780, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.unchecked:before, .checked:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 792, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.checked:before {
+  content: "\f00c";
+  line-height: 20px;
+  text-align: center;
+  font-family: 'FontAwesome';
+  color: white;
+  background: #1296d9;
+  border: 1px solid #0e75aa;
+}
+
+/* line 803, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-100 {
+  width: 100%;
+}
+
+/* line 806, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-10 {
+  width: 10%;
+}
+
+/* line 809, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-15 {
+  width: 20%;
+}
+
+/* line 812, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-20 {
+  width: 20%;
+}
+
+/* line 815, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-25 {
+  width: 25%;
+}
+
+/* line 818, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-30 {
+  width: 30%;
+}
+
+/* line 821, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-35 {
+  width: 35%;
+}
+
+/* line 824, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-40 {
+  width: 40%;
+}
+
+/* line 827, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-45 {
+  width: 45%;
+}
+
+/* line 830, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-50 {
+  width: 50%;
+}
+
+/* line 833, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-55 {
+  width: 55%;
+}
+
+/* line 836, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-60 {
+  width: 60%;
+}
+
+/* line 839, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-65 {
+  width: 65%;
+}
+
+/* line 842, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-70 {
+  width: 70%;
+}
+
+/* line 845, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-75 {
+  width: 75%;
+}
+
+/* line 848, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-80 {
+  width: 80%;
+}
+
+/* line 851, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-85 {
+  width: 85%;
+}
+
+/* line 854, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
+.width-90 {
+  width: 90%;
+}
+
+/* line 2, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
 #bottom_bg .footer-features-images {
   margin: 15px auto;
-  text-align: center; }
-/* line 6, sass/_footer.scss */
+  text-align: center;
+}
+
+/* line 6, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
 #bottom_bg .bottom {
   background-color: #1296d9;
   padding: 25px 0;
   color: white;
   min-height: 130px;
-  height: 130px; }
-  /* line 13, sass/_footer.scss */
-  #bottom_bg .bottom .logostr {
-    position: absolute;
-    top: 0;
-    left: 15px; }
-    /* line 17, sass/_footer.scss */
-    #bottom_bg .bottom .logostr .company-name {
-      font-size: 2em;
-      line-height: 1; }
-    /* line 21, sass/_footer.scss */
-    #bottom_bg .bottom .logostr .slogan {
-      font-size: 0.84em;
-      line-height: 1.5;
-      font-weight: 300; }
-  /* line 28, sass/_footer.scss */
-  #bottom_bg .bottom .forlinks {
-    color: white;
-    font-size: 0.85em;
-    text-align: center; }
-    /* line 33, sass/_footer.scss */
-    #bottom_bg .bottom .forlinks a:link, #bottom_bg .bottom .forlinks a:visited {
-      text-transform: uppercase;
-      text-decoration: none;
-      color: white; }
-    /* line 38, sass/_footer.scss */
-    #bottom_bg .bottom .forlinks a:hover {
-      color: #bde5fa; }
-    /* line 41, sass/_footer.scss */
-    #bottom_bg .bottom .forlinks .sep {
-      margin: 0 5px; }
-  /* line 46, sass/_footer.scss */
-  #bottom_bg .bottom .contact-list {
-    position: absolute;
-    top: 0;
-    right: -100px;
-    color: #bde5fa;
-    text-align: left;
-    font-size: 0.85em; }
-    /* line 55, sass/_footer.scss */
-    #bottom_bg .bottom .contact-list > div {
-      line-height: 1.4; }
-    /* line 59, sass/_footer.scss */
-    #bottom_bg .bottom .contact-list .value {
-      color: white; }
-/* line 64, sass/_footer.scss */
+  height: 130px;
+}
+
+/* line 13, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .bottom .logostr {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+/* line 17, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .bottom .logostr .company-name {
+  font-size: 2em;
+  line-height: 1;
+}
+
+/* line 21, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .bottom .logostr .slogan {
+  font-size: 0.84em;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* line 28, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .bottom .forlinks {
+  color: white;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+/* line 33, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .bottom .forlinks a:link, #bottom_bg .bottom .forlinks a:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 38, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .bottom .forlinks a:hover {
+  color: #bde5fa;
+}
+
+/* line 41, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .bottom .forlinks .sep {
+  margin: 0 5px;
+}
+
+/* line 46, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .bottom .contact-list {
+  position: absolute;
+  top: 0;
+  right: -100px;
+  color: #bde5fa;
+  text-align: left;
+  font-size: 0.85em;
+}
+
+/* line 55, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .bottom .contact-list > div {
+  line-height: 1.4;
+}
+
+/* line 59, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .bottom .contact-list .value {
+  color: white;
+}
+
+/* line 64, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
 #bottom_bg .footer {
   background: #667373;
-  padding: 10px 0; }
-  /* line 68, sass/_footer.scss */
-  #bottom_bg .footer .copyright {
-    color: #d1d1d1;
-    font-size: 0.74em; }
+  padding: 10px 0;
+}
+
+/* line 68, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/_footer.scss */
+#bottom_bg .footer .copyright {
+  color: #d1d1d1;
+  font-size: 0.74em;
+}
+
+/*# sourceMappingURL=../style.map */
