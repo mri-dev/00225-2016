@@ -37,7 +37,6 @@
 	<ul>
 		<li><a href="<?=$base?>/packages.php?spt=2" ><?=TMENU4A?></a></li>
 		<li><a href="<?=$base?>/hosting.php?pt=ds" ><?=TMENU4B?></a></li>
-		<li><a href="<?=$base?>/hosting.php?spt=12" ><?=TMENU4C?></a></li>
 		<li><a href="<?=$base?>/hosting.php?spt=14" ><?=TMENU4D?></a></li>
 	</ul>
 </li>
@@ -68,7 +67,6 @@
 		<li><a href="<?=$base?>/kb.php" ><?=TMENU6A?></a></li>
 		<li><a href="<?=$securebase?>/helpdesk.php" ><?=TMENU6B?></a></li>
 		<li><a href="<?=$base?>/contact.php" ><?=TMENU6C?></a></li>
-		<li><a href="<?=$base?>/news.php" ><?=TMENU6D?></a></li>
 		<li><a href="<?=$securebase?>/terms.php" ><?=TMENU6E?></a></li>
 	</ul>
 </li>
