@@ -232,11 +232,6 @@
                                  <td class="data bold width-15 ac"><?=$numedomains['pendingtransfer']?></td>
                                  <td class="data bold width-15 ac"><a href="<?=$base?>/manage.php?search=1&amp;list=transfer"><?=VIEWEDIT?></a></td>
                               </tr>
-                              <tr>
-                                 <td class="data width-70 al"><?=MEMBER4SALE?></td>
-                                 <td class="data bold width-15 ac"><?=$counts['forsale']?></td>
-                                 <td class="data bold width-15 ac"><a href="<?=$base?>/sellhome.php"><?=VIEWEDIT?></a></td>
-                              </tr>
                               <?php if($usehosting==1 and $hosting_active==1){ ?>
                               <tr>
                                  <td class="data width-70 al"><?=MEMBERHOSTING?></td>
@@ -284,39 +279,6 @@
                         </table>
                         <?=$boxbottom?>
                         <p class="center">[<a href="<?=$securebase?>/journal.php"><?=VIEWALL?></a>]</p>
-                     </div>
-                     <!---->
-                     <div class="tabPanel"><?=WELCOMENEWS?></div>
-                     <div class="childTab">
-                        <div id="userStats">
-                           <div class="statPanel"><?=MEMBERNEWS?></div>
-                           <div>
-                              <div class="rssnewsPageWelcome">
-                                 <div class="rsstitle underline"><?=$news2[0]['topic']?></div>
-                                 <div class="rssdate"><?=$news2[0]['date']?></div>
-                                 <div class="rssdescription"><?=$news2[0]['news']?></div>
-                                 <br />
-                                 <div class="rsstitle underline"><?=$news2[1]['topic']?></div>
-                                 <div class="rssdate"><?=$news2[1]['date']?></div>
-                                 <div class="rssdescription"><?=$news2[1]['news']?></div>
-                                 <br />
-                              </div>
-                              <p class="ac p-5">[<a href="<?=$securebase?>/news.php" class="center"><?=VIEWALL?></a>]</p>
-                           </div>
-                           <!---->
-                           <div class="statPanel"><?=SYSTEMNEWS?></div>
-                           <div>
-                              <div class="rssnewsPageWelcome">
-                                 <div class="rsstitle underline"><?=$news3[0]['topic']?></div>
-                                 <div class="rssdate"><?=$news3[0]['date']?></div>
-                                 <div class="rssdescription"><?=$news3[0]['news']?></div>
-                                 <br />
-                                 <div class="rsstitle underline"><?=$news3[1]['topic']?></div>
-                                 <div class="rssdate"><?=$news3[1]['date']?></div>
-                                 <div class="rssdescription"><?=$news3[1]['news']?></div>
-                              </div>
-                           </div>
-                        </div>
                      </div>
                      <!-- Tabs /e -->
                   </div>
