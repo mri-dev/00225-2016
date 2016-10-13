@@ -19,9 +19,9 @@ body {
   border: 1px solid darken(#667373, 10%);
   padding: 0 20px;
   line-height: 40px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 
 
   &:hover {
@@ -31,6 +31,58 @@ body {
   &:active:hover {
     background: darken($color-primary, 10%);
     color: white;
+  }
+
+  &.btn-red{
+    background: $color-red;
+    border: 1px solid darken($color-red, 5%);
+
+    &:hover {
+      background: darken($color-red, 5%);
+      border: 1px solid darken($color-red, 10%);
+      color: white;
+    }
+    &:active:hover {
+      background: darken($color-red, 10%);
+      color: white;
+    }
+  }
+  &.btn-green{
+    background: $color-green;
+    border: 1px solid darken($color-green, 5%);
+
+    &:hover {
+      background: darken($color-green, 5%);
+      border: 1px solid darken($color-green, 10%);
+      color: white;
+    }
+    &:active:hover {
+      background: darken($color-green, 10%);
+      color: white;
+    }
+  }
+  &.btn-blue{
+    background: $color-primary;
+    border: 1px solid darken($color-primary, 5%);
+
+    &:hover {
+      background: darken($color-primary, 5%);
+      border: 1px solid darken($color-primary, 10%);
+      color: white;
+    }
+    &:active:hover {
+      background: darken($color-primary, 10%);
+      color: white;
+    }
+  }
+}
+
+.btn{
+  &.btn-sm{
+    height: auto;
+    max-height: initial;
+    line-height: 2;
+    padding: 2px 8px;
   }
 }
 
@@ -50,12 +102,17 @@ a:hover {
     display: none;
 }
 
-input[type=text]{
-  border: 1px solid #cccfd1;
+input[type=text],
+input[type=password],
+input[type=number],
+select{
+  border: 1px solid #cccfd1 !important;
   color: $color-grey;
   padding: 0 15px;
   line-height: 40px;
   font-size: 1.2em;
+  height: 40px;
+  max-height: 40px;
 }
 
 .header {
@@ -576,6 +633,13 @@ table.data {
     & > tr > td {
       padding: 5px 0;
       border-bottom: 1px solid #d7d7d7;
+
+      &.boxtitle{
+        font-size: 1.1em;
+        color: #222222;
+        font-weight: bold;
+        padding: 10px 0;
+      }
     }
   }
 
@@ -746,7 +810,8 @@ table.transcheck{
     .inpSubmit{
       font-size: 1.2em;
       text-transform: uppercase;
-      padding: 10px 15px;
+      padding: 0px 15px;
+      line-height: 1.8;
       font-weight: bold;
       margin-top: 10px;
     }
@@ -774,6 +839,13 @@ table.transcheck{
   margin: 10px 0;
   font-size: 1.1em;
 }
+.error{
+  background: $color-red;
+  color: #ffffff;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.1em;
+}
 
 .tip-wrap{
   background: $color-grey;
@@ -795,6 +867,9 @@ table#mainData {
 
   td#tablehead{
     padding: 25px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #444444;
 
     h1 {
       font-size: 1.8em;
@@ -807,6 +882,172 @@ table#mainData {
 
   td#mainTD {
     padding-top: 20px;
+  }
+}
+
+table#mainData.account-page {
+  fieldset{
+    legend{
+      background: $color-grey;
+      color: white;
+      padding: 10px 0;
+      margin: 0 0 25px 0;
+      border: none;
+    }
+    margin: 0 0 25px 0;
+  }
+
+  .yourstats{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: $color-primary;
+    color: white;
+    padding: 10px;
+  }
+  .stat-head-title{
+    background: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    position: relative;
+
+    &:after{
+      content:"";
+      position: absolute;
+      bottom: -20px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: #f0f0f0 transparent transparent transparent;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+  #userStatsLeft{
+    background: #f2f2f2;
+
+    .stat-head-title{
+      background: #e4e4e4;
+      &:after{
+        border-color: #e4e4e4 transparent transparent transparent;
+      }
+    }
+  }
+
+  #userPanel{
+    padding: 15px;
+    background: #fafafa;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    margin-top: 75px;
+
+    ul.tab-menu{
+      position: absolute;
+      top: -53px;
+      left: -1px;
+      margin: 0;
+      padding: 0;
+
+      li{
+        border:1px solid #f1f1f1;
+        border-bottom: none;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        vertical-align: bottom;
+        margin-right: 5px;
+
+        a{
+          background: #eaeaea;
+          padding: 10px 15px;
+          display: block;
+          color: #888888;
+        }
+        &.tab-selected{
+          a{
+            background: #fafafa;
+            padding: 15px;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  table.inputform {
+    tr td {
+      padding: 10px;
+    }
+    tr:first-child td {
+      line-height: 40px;
+    }
+  }
+}
+
+#uvmenu{
+  padding-right: 15px;
+
+  .CollapsiblePanel{
+    border: 1px solid #d7d7d7;
+    .CollapsiblePanelTab{
+      background: #eaeaea;
+      color: black;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1em;
+      padding: 10px;
+      cursor: pointer;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        right: 10px;
+        content:"\f0d7";
+        font-family: 'FontAwesome';
+      }
+    }
+    &.CollapsiblePanelClosed{
+      .CollapsiblePanelTab:after{
+        content:"\f0d9";
+      }
+    }
+    .CollapsiblePanelContent{
+      ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+          a{
+            font-size: 0.9em;
+            padding: 10px;
+            display: block;
+            color: #8a8a8a;
+
+            &:hover{
+              color: #444444;
+            }
+
+            &[href*='LogOut']{
+              position: relative;
+              color: lighten(desaturate($color-red, 10), 10%);
+              &:after {
+                content: "\f08b";
+                font-family: 'FontAwesome';
+                position: absolute;
+                right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -832,6 +1073,17 @@ table.pkgtable{
   td.order {
     padding: 0;
     vertical-align: bottom;
+
+    .outofstock{
+      background: lighten($color-red, 10%);
+      color: white !important;
+      font-size: 0.85em;
+      padding: 5px;
+
+      .red {
+        color:white !important;
+      }
+    }
   }
 
   table {
@@ -864,6 +1116,93 @@ table.price {
   }
 }
 
+#login {
+  padding: 25px;
+  background: #f1f1f1;
+
+  #mainData{
+    margin-bottom: 25px;
+  }
+
+  .login_credentials{
+    table {
+      td {
+        padding: 4px 0;
+      }
+    }
+  }
+
+  .register-title{
+    color: black;
+    font-weight: bold;
+  }
+
+  .login-register-info{
+    position: relative;
+    background: #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 13px 20px;
+    font-size: 0.8em;
+
+    .underline{
+      margin-bottom: 10px;
+      color: #333;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      padding: 0 0 5px;
+    }
+
+    .whyregister{
+      padding: 0;
+      margin: 0 0 0 18px;
+    }
+
+    .newaccount{
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    &:before {
+      position: absolute;
+      content:"";
+      left: 50%;
+      top: -40px;
+      border-style: solid;
+      border-width: 20px;
+      border-color: transparent transparent #ffffff transparent;
+      transform: translateX(-50%);
+    }
+  }
+}
+#createacct{
+  table.formtable{
+    td {
+      padding: 10px;
+    }
+    tr td:first-child{
+      line-height: 40px;
+    }
+    tr td:last-child{
+      color: #aaaaaa;
+      font-size: 0.9em;
+    }
+  }
+  .ccaHeader{
+    text-align: center;
+    padding: 8px 0;
+    background: $color-grey;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white !important;
+    margin: 10px 0;
+  }
+}
+
+.morespace {
+  margin: 12px 0;
+}
 table.data.alc{
   td.boxtitle {
     font-size: 1.3em;
@@ -874,7 +1213,6 @@ table.data.alc{
   }
 
   td select {
-    padding: 10px;
     border: 1px solid #d7d7d7;
   }
 }
@@ -927,6 +1265,7 @@ h2.hsignup{
 .unchecked, .checked {
   position: relative;
   padding-left: 25px;
+  line-height: 20px;
   cursor: pointer;
 
   &:before {
@@ -937,6 +1276,96 @@ h2.hsignup{
     border: 1px solid #d7d7d7;
     width: 20px;
     height: 20px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+
+.server-details{
+  .details-important,
+  .details-features{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin: 0 -2px;
+    vertical-align: top;
+  }
+  .details-important{
+    width: 35%;
+    padding: 0 10px;
+
+    .image {
+      text-align: center;
+      width: 100%;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #d7d7d7;
+      img{
+        margin: 0 auto;
+      }
+    }
+
+    .msg{
+      position: relative;
+      font-size:0.8em;
+      padding-left: 30px;
+      font-style: italic;
+      color: lighten($color-red, 15%);
+
+      &:before {
+        color: lighten($color-red, 15%);
+        font-style: normal;
+        content: "\f06a";
+        font-family: 'FontAwesome';
+        position: absolute;
+        left: 3px;
+        top: 0;
+        font-size: 20px;
+      }
+    }
+    .gift{
+      position: relative;
+      font-size:0.8em;
+      padding-left: 30px;
+      font-weight: bold;
+      margin-top: 15px;
+      color: darken($color-green, 10%);
+
+      &:before {
+        content: "\f06b";
+        font-family: 'FontAwesome';
+        position: absolute;
+        left: 3px;
+        top: 0;
+        color: darken($color-green, 10%);
+        font-size: 20px;
+      }
+    }
+  }
+  .details-features{
+    width: 65%;
+    padding-left: 10px;
+    border-left: 1px solid #d7d7d7;
+
+    .feat-var{
+      font-weight: bold;
+      color: black;
+    }
+  }
+}
+
+#contact{
+  table.contactform{
+    margin-top: 25px;
+    td{
+      padding: 10px;
+    }
+
+    tr td:first-child{
+      line-height: 40px;
+    }
   }
 }
 
@@ -950,6 +1379,40 @@ h2.hsignup{
     background: $color-primary;
     border: 1px solid darken($color-primary, 10%);
   }
+}
+
+.togglerHolder{
+  .toggler {
+    position: relative;
+    margin: 5px 0;
+    background: #fafafa;
+    border: 2px solid #f2f2f2;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+      background: #e8e8e8;
+    }
+
+    &.selected {
+      border: 2px solid $color-green;
+      color: darken($color-green, 10%);
+      font-weight: bold;
+
+      &:after {
+        content:"\f00c";
+        font-family:'FontAwesome';
+        position: absolute;
+        right: 15px;
+        color: $color-green;
+      }
+    }
+  }
+}
+.elementHolder{
+  margin: 15px 0;
+  padding: 15px;
 }
 
 .width-100{

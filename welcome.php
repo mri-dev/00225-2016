@@ -2,7 +2,7 @@
 <?=$top?>
 
 <!-- Contents /s -->
-<table id="mainData">
+<table id="mainData" class="account-page">
    <tr>
       <td id="tablehead"><h1><?=MEMBERHOMETITLE?>&nbsp;<?=$help_icon?></h1></td>
    </tr>
@@ -22,7 +22,7 @@
             <tr>
                <td class="width-20 vlt"><?=$umenu?></td>
                <td class="width-1">&nbsp;</td>
-               <td class="width-100 vlt" style="margin:0; padding:0;">
+               <td class="width-100 vlt">
                   <?php } ?>
                   <form action="welcome.php" method="post" name="theForm2" class="awform" onsubmit="submitonce(this); showObject(true,false);">
                      <?=$boxtop?>
@@ -48,6 +48,7 @@
                         <table class="width-100">
                            <tr>
                               <td class="width-50 vlt" id="userStatsLeft">
+                                <div class="stat-head-title">Pénzügyek</div>
                                  <table class="width-100">
                                     <?php if($_SESSION[subuser]){ ?>
                                     <tr>
@@ -143,7 +144,8 @@
                                     <?php } ?>
                                  </table>
                               </td>
-                              <td class="vlt al width-50 vlt">
+                              <td class="vlt al width-50 vlt accountdetails">
+                                <div class="stat-head-title">Ügyfélkezelés</div>
                                  <table class="width-100">
                                     <tr>
                                        <td class="al width-1 vlt" nowrap="nowrap" rowspan="3"><img src="templates/<?=$templatedir?>/images/people-trans.png" alt="people" width="22" height="16" /></td>
@@ -158,48 +160,6 @@
                                        <td class="ac bold" colspan="2">[<a href="<?=$securebase?>/editprofile.php"><?=EDITACCTINFO?></a>]</td>
                                     </tr>
                                  </table>
-                                 <hr />
-                                 <?php if ($cc_link==1){?>
-                                 <table class="width-100">
-                                    <tr>
-                                       <td class="al width-1 vlt" nowrap="nowrap" rowspan="3"><img src="templates/<?=$templatedir?>/images/creditcards-trans.png" alt="creditcards" width="16" height="16" /></td>
-                                       <?php if (trim($cc_info[2]) != "") {?>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=CARDNUMBER?>:&nbsp;</td>
-                                       <td>*****<?=$cc_info[2]?></td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=CARDEXP?>:&nbsp;</td>
-                                       <td><?=$cc_info[0]?>/<?=$cc_info[1]?></td>
-                                    </tr>
-                                    <?php }else{ ?>
-                                    <td class="al width-30 bold" nowrap="nowrap"><?=CARDNUMBER?>:&nbsp;</td>
-                                    <td>N/A</td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=CARDEXP?>:&nbsp;</td>
-                                       <td>N/A</td>
-                                    </tr>
-                                    <?php } ?>
-                                    <tr>
-                                       <td class="ac bold" colspan="3">[<a href="view_cc.php" onclick='window.open("<?=$securebase?>/viewitem.php?action=viewcc&amp;uid=<?=$userid?>","viewer","width=475,height=515,status=yes,scrollbars=1,resizable=1");return false;'><?=VIEWEDIT?></a>]</td>
-                                    </tr>
-                                 </table>
-                                 <?php }else{ ?>
-                                 <table class="width-100">
-                                    <tr>
-                                       <td class="al width-1 vlt" nowrap="nowrap" rowspan="4"><img src="templates/<?=$templatedir?>/images/info-trans.png" alt="!" width="16" height="16" /></td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap">[<a href="<?=$kb_link?>"><?=WKBLINK?></a>]</td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap">[<a href="<?=$securebase?>/terms.php" rel="external"><?=WTERMS?></a>]</td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap">[<a href="helpdesk.php"><?=WHELPDESK?></a>]</td>
-                                    </tr>
-                                 </table>
-                                 <?php } ?>
                               </td>
                            </tr>
                         </table>
@@ -231,11 +191,6 @@
                                  <td class="data width-70 al"><?=MEMBERTRANSFERS?></td>
                                  <td class="data bold width-15 ac"><?=$numedomains['pendingtransfer']?></td>
                                  <td class="data bold width-15 ac"><a href="<?=$base?>/manage.php?search=1&amp;list=transfer"><?=VIEWEDIT?></a></td>
-                              </tr>
-                              <tr>
-                                 <td class="data width-70 al"><?=MEMBER4SALE?></td>
-                                 <td class="data bold width-15 ac"><?=$counts['forsale']?></td>
-                                 <td class="data bold width-15 ac"><a href="<?=$base?>/sellhome.php"><?=VIEWEDIT?></a></td>
                               </tr>
                               <?php if($usehosting==1 and $hosting_active==1){ ?>
                               <tr>
@@ -284,39 +239,6 @@
                         </table>
                         <?=$boxbottom?>
                         <p class="center">[<a href="<?=$securebase?>/journal.php"><?=VIEWALL?></a>]</p>
-                     </div>
-                     <!---->
-                     <div class="tabPanel"><?=WELCOMENEWS?></div>
-                     <div class="childTab">
-                        <div id="userStats">
-                           <div class="statPanel"><?=MEMBERNEWS?></div>
-                           <div>
-                              <div class="rssnewsPageWelcome">
-                                 <div class="rsstitle underline"><?=$news2[0]['topic']?></div>
-                                 <div class="rssdate"><?=$news2[0]['date']?></div>
-                                 <div class="rssdescription"><?=$news2[0]['news']?></div>
-                                 <br />
-                                 <div class="rsstitle underline"><?=$news2[1]['topic']?></div>
-                                 <div class="rssdate"><?=$news2[1]['date']?></div>
-                                 <div class="rssdescription"><?=$news2[1]['news']?></div>
-                                 <br />
-                              </div>
-                              <p class="ac p-5">[<a href="<?=$securebase?>/news.php" class="center"><?=VIEWALL?></a>]</p>
-                           </div>
-                           <!---->
-                           <div class="statPanel"><?=SYSTEMNEWS?></div>
-                           <div>
-                              <div class="rssnewsPageWelcome">
-                                 <div class="rsstitle underline"><?=$news3[0]['topic']?></div>
-                                 <div class="rssdate"><?=$news3[0]['date']?></div>
-                                 <div class="rssdescription"><?=$news3[0]['news']?></div>
-                                 <br />
-                                 <div class="rsstitle underline"><?=$news3[1]['topic']?></div>
-                                 <div class="rssdate"><?=$news3[1]['date']?></div>
-                                 <div class="rssdescription"><?=$news3[1]['news']?></div>
-                              </div>
-                           </div>
-                        </div>
                      </div>
                      <!-- Tabs /e -->
                   </div>

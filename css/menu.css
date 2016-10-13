@@ -56,7 +56,13 @@
   color: white;
 }
 
-/* line 50, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
+/* line 48, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
+#menu > li a.ac.logged-in {
+  background: #4e5858;
+  color: white;
+}
+
+/* line 54, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
 #menu > li > ul {
   z-index: 999;
   display: none;
@@ -79,7 +85,7 @@
   border-radius: 0 0 5px 5px;
 }
 
-/* line 72, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
+/* line 76, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
 #menu > li > ul li a {
   line-height: 1;
   padding: 15px;
@@ -87,20 +93,20 @@
   font-size: 12px;
 }
 
-/* line 77, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
+/* line 81, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
 #menu > li > ul li a:hover {
   color: white;
   background: #1296d9;
 }
 
-/* line 84, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
+/* line 88, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
 #menu > li > ul li:last-child a:hover {
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
 }
 
-/* line 91, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
+/* line 95, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
 #menu > li > ul:before {
   content: "";
   top: -20px;
@@ -116,7 +122,7 @@
   border-color: transparent transparent #6b6b6b transparent;
 }
 
-/* line 107, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
+/* line 111, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/menu.scss */
 #menu > li:hover > ul {
   display: block;
 }

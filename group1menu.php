@@ -93,8 +93,8 @@ if ($LoggedIn== "1"){ ?>
 <?php } ?>
 <?php
 if ($LoggedIn== "1"){ ?>
-<li><a href="<?=$securebase?>/LogOut.php" class="<?=$page_acctSelected?> ac logged-in iconed"><i class="fa fa-user"></i> <?=TMENU7B?></a></li>
+<li><a href="<?=$securebase?>/LogOut.php" class="<?=$page_acctSelected?> ac logged-in iconed"><?=TMENU7B?> <i class="fa fa-sign-out"></i> </a></li>
 <?php }else{ ?>
-<li><a href="<?=$securebase?>/aLogIn.php" class="<?=$page_acctSelected?> ac need-login iconed"><i class="fa fa-user"></i> <?=TMENU7A?></a></li>
+<li><a href="<?=$securebase?>/aLogIn.php" class="<?=$page_acctSelected?> ac need-login iconed"><?=TMENU7A?> <i class="fa fa-user"></i></a></li>
 <?php } ?>
 </ul>

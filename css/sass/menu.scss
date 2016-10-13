@@ -45,6 +45,10 @@
                 background: $color-red;
                 color: white;
             }
+            &.ac.logged-in {
+              background: darken($color-grey, 10%);
+              color: white;
+            }
         }
 
         & > ul {
