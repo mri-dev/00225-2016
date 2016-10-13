@@ -106,7 +106,11 @@ input[type=text],
 input[type=password],
 input[type=number],
 select{
+<<<<<<< HEAD
   border: 1px solid #cccfd1 !important;
+=======
+  border: 1px solid #cccfd1;
+>>>>>>> origin/master
   color: $color-grey;
   padding: 0 15px;
   line-height: 40px;
@@ -1176,6 +1180,7 @@ table.price {
     }
   }
 }
+<<<<<<< HEAD
 #createacct{
   table.formtable{
     td {
@@ -1203,6 +1208,9 @@ table.price {
 .morespace {
   margin: 12px 0;
 }
+=======
+
+>>>>>>> origin/master
 table.data.alc{
   td.boxtitle {
     font-size: 1.3em;

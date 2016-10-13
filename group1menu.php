@@ -64,7 +64,7 @@
 <li class="has-sub">
 	<a href="<?=$base?>/support.php" class="<?=$page_supportSelected?>"><?=TMENU6?></a>
 	<ul>
-		<li><a href="<?=$base?>/kb.php" ><?=TMENU6A?></a></li>
+		<li><a href="/" ><?=TMENU6A?></a></li>
 		<li><a href="<?=$securebase?>/helpdesk.php" ><?=TMENU6B?></a></li>
 		<li><a href="<?=$base?>/contact.php" ><?=TMENU6C?></a></li>
 		<li><a href="<?=$securebase?>/terms.php" ><?=TMENU6E?></a></li>
