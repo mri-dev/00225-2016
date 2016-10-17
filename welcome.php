@@ -28,15 +28,11 @@
                      <?=$boxtop?>
                      <fieldset>
                         <legend><span class="boxlegend"><?=QUICKMANAGE?></span></legend>
-                        <table class="width-100">
-                           <tr>
-                              <td class="al paddZero">
-                                 <input type="text" name="qdomain" id="fe-searchdomain" class="welcomeDomainSearch" value="<?=QMANAGEBUTTON?>" onclick="if(this.value=='<?=QMANAGEBUTTON?>')this.value='';" onblur="if(this.value=='')this.value='<?=QMANAGEBUTTON?>';" />
-                                 <input type="hidden" name="qmanage" value="1" />
-                                 <input type="submit" name="submit" value="<?=QUICKMANAGECLICK?>" />
-                              </td>
-                           </tr>
-                        </table>
+                        <div class="domain-search-welcome">
+                          <input type="text" name="qdomain" id="fe-searchdomain" class="welcomeDomainSearch" value="<?=QMANAGEBUTTON?>" onclick="if(this.value=='<?=QMANAGEBUTTON?>')this.value='';" onblur="if(this.value=='')this.value='<?=QMANAGEBUTTON?>';" />
+                          <input type="hidden" name="qmanage" value="1" />
+                          <input type="submit" name="submit" value="<?=QUICKMANAGECLICK?>" />
+                        </div>
                      </fieldset>
                      <?=$boxbottom?>
                   </form>
@@ -49,121 +45,132 @@
                            <tr>
                               <td class="width-50 vlt" id="userStatsLeft">
                                 <div class="stat-head-title">Pénzügyek</div>
-                                 <table class="width-100">
-                                    <?php if($_SESSION[subuser]){ ?>
-                                    <tr>
-                                       <td class="al width-1 vlt" nowrap="nowrap" rowspan="4"><img src="templates/<?=$templatedir?>/images/money-trans.png" alt="$$" width="16" height="16" /></td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=CURRENTDUE?>:&nbsp;</td>
-                                       <td><?=LCURRENCYSYMBOL?>***.**<?=RCURRENCYSYMBOL?></td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=PASTDUE?>:&nbsp;</td>
-                                       <td><span class="red"><?=LCURRENCYSYMBOL?>***.**<?=RCURRENCYSYMBOL?></span></td>
-                                    </tr>
-                                    <?php }else{ ?>
-                                    <tr>
-                                       <td class="al width-1 vlt" nowrap="nowrap" rowspan="4"><img src="templates/<?=$templatedir?>/images/money-trans.png" alt="$$" width="16" height="16" /></td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=CURRENTDUE?>:&nbsp;</td>
-                                       <td><?=LCURRENCYSYMBOL?><?=$invoice_stats[0]?><?=RCURRENCYSYMBOL?></td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=PASTDUE?>:&nbsp;</td>
-                                       <td><span class="red"><?=LCURRENCYSYMBOL?><?=$invoice_stats[1]?><?=RCURRENCYSYMBOL?></span></td>
-                                    </tr>
-                                    <?php } ?>
-                                    <tr>
-                                       <td class="ac bold" colspan="3">[<a href="<?=$securebase?>/imanage.php"><?=VIEWPAY?></a>]</td>
-                                    </tr>
-                                 </table>
-                                 <hr />
-                                 <table class="width-100">
-                                    <?php if ($usecredits == "True"){ ?>
-                                    <?php if($_SESSION[subuser]){ ?>
-                                    <tr>
-                                       <td class="al width-1 vlt" nowrap="nowrap" rowspan="2"><img src="templates/<?=$templatedir?>/images/money-trans.png" alt="$$" width="16" height="16" /></td>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=PENDINGCREDITS?>:&nbsp;</td>
-                                       <td><span class="orange"><?=LCURRENCYSYMBOL?>***.**<?=RCURRENCYSYMBOL?></span></td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=LIVECREDITS?>:&nbsp;</td>
-                                       <td><span class="green"><?=LCURRENCYSYMBOL?>***.**<?=RCURRENCYSYMBOL?></span></td>
-                                    </tr>
+                                <div class="user-stat-holder">
+                                <?php if($_SESSION[subuser]){ ?>
+                                <div class="row">
+                                  <div class="col-md-6 rhead">
+                                    <?=CURRENTDUE?>
+                                  </div>
+                                  <div class="col-md-6 rvar">
+                                    <?=LCURRENCYSYMBOL?>***.** <?=RCURRENCYSYMBOL?>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6 rhead">
+                                    <?=PASTDUE?>
+                                  </div>
+                                  <div class="col-md-6 rvar">
+                                    <?=LCURRENCYSYMBOL?>***.** <?=RCURRENCYSYMBOL?>
+                                  </div>
+                                </div>
+                                <?php }else{ ?>
+                                <div class="row">
+                                  <div class="col-md-6 rhead">
+                                    <?=CURRENTDUE?>
+                                  </div>
+                                  <div class="col-md-6 rvar">
+                                    <?=LCURRENCYSYMBOL?><?=$invoice_stats[0]?> <?=RCURRENCYSYMBOL?>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6 rhead">
+                                    <?=PASTDUE?>
+                                  </div>
+                                  <div class="col-md-6 rvar">
+                                    <?=LCURRENCYSYMBOL?><?=$invoice_stats[1]?> <?=RCURRENCYSYMBOL?>
+                                  </div>
+                                </div>
+                                <?php } ?>
+                                <hr />
+                                <?php if ($usecredits == "True"){ ?>
+                                  <?php if($_SESSION[subuser]){ ?>
+                                    <div class="row">
+                                      <div class="col-md-6 rhead">
+                                        <?=PENDINGCREDITS?>
+                                      </div>
+                                      <div class="col-md-6 rval">
+                                        <?=LCURRENCYSYMBOL?>***.** <?=RCURRENCYSYMBOL?>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6 rhead">
+                                        <?=LIVECREDITS?>
+                                      </div>
+                                      <div class="col-md-6 rvar">
+                                        <?=LCURRENCYSYMBOL?>***.** <?=RCURRENCYSYMBOL?>
+                                      </div>
+                                    </div>
                                     <?php if ($use_acct_refill == "1"){ ?>
-                                    <tr>
-                                       <td class="ac bold" colspan="3">[<a href="<?=$securebase?>/acctrefill.php"><?=REFILLACCTLINK?></a>]</td>
-                                    </tr>
+                                    <div class="row">
+                                      <div class="col-md-12"><a class="action-btn" href="<?=$securebase?>/acctrefill.php"><?=REFILLACCTLINK?> <i class="fa fa-upload"></i></a></div>
+                                    </div>
                                     <?php } ?>
-                                    <?php }else{ ?>
-                                    <tr>
-                                       <td class="al width-1 vlt" nowrap="nowrap" rowspan="3"><img src="templates/<?=$templatedir?>/images/money-trans.png" alt="$$" width="16" height="16" /></td>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=PENDINGCREDITS?>:&nbsp;</td>
-                                       <td><span class="orange"><?=LCURRENCYSYMBOL?><?=$pendingcredit?><?=RCURRENCYSYMBOL?></span></td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=LIVECREDITS?>:&nbsp;</td>
-                                       <td><span class="green"><?=LCURRENCYSYMBOL?><?=$availablecredit?><?=RCURRENCYSYMBOL?></span></td>
-                                    </tr>
+                                  <?php }else{ ?>
+                                    <div class="row">
+                                      <div class="col-md-6 rhead">
+                                        <?=PENDINGCREDITS?>
+                                      </div>
+                                      <div class="col-md-6 rvar orange">
+                                        <?=LCURRENCYSYMBOL?><?=$pendingcredit?> <?=RCURRENCYSYMBOL?>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6 rhead">
+                                        <?=LIVECREDITS?>
+                                      </div>
+                                      <div class="col-md-6 rvar green">
+                                        <?=LCURRENCYSYMBOL?><?=$availablecredit?> <?=RCURRENCYSYMBOL?>
+                                      </div>
+                                    </div>
+                                    <hr>
                                     <?php if ($use_acct_refill == "1"){ ?>
-                                    <tr>
-                                       <td class="ac bold" colspan="3">[<a href="<?=$securebase?>/acctrefill.php"><?=REFILLACCTLINK?></a>]</td>
-                                    </tr>
-                                    <?php if($dontpayallwcreds=="1"){ ?>
-                                    <tr>
-                                       <td class="ac bold" colspan="3">[<a href="#" onclick='window.open("<?=$securebase?>/viewitem.php?action=view_cred_usage&amp;uid=<?=$userid?>","viewer","width=530,height=515,status=yes,scrollbars=1,resizable=1");return false;'><?=ASSIGNCREDS?></a>]</td>
-                                    </tr>
+                                      <a class="action-btn" href="<?=$securebase?>/acctrefill.php"><?=REFILLACCTLINK?> <i class="fa fa-upload"></i></a>
+                                      <?php if($dontpayallwcreds=="1"){ ?>
+                                        <a href="#" class="action-btn" onclick='window.open("<?=$securebase?>/viewitem.php?action=view_cred_usage&amp;uid=<?=$userid?>","viewer","width=530,height=515,status=yes,scrollbars=1,resizable=1");return false;'><?=ASSIGNCREDS?></a>
+                                      <?php } ?>
                                     <?php } ?>
-                                    <?php } ?>
-                                    <?php } ?>
-                                    <?php }else{ ?>
-                                    <tr>
-                                       <td class="al width-1 vlt" nowrap="nowrap" rowspan="4"><img src="templates/<?=$templatedir?>/images/info-trans.png" alt="!" width="16" height="16" /></td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=TOTALDOMAINS?>:&nbsp;</td>
-                                       <td>[<a href="<?=$base?>/manage.php"><?=$numdomains?></a>]</td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=TOTALHOSTED?>:&nbsp;</td>
-                                       <td>[<a href="<?=$securebase?>/hmanage.php"><?=$numhosted?></a>]</td>
-                                    </tr>
-                                    <?php if ($support_link == "$securebase/helpdesk.php?search=open") { ?>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=WTICKETS?>:&nbsp;</td>
-                                       <td>[<a href="<?=$securebase?>/helpdesk.php"><?=$total_tickets?></a>]</td>
-                                    </tr>
-                                    <?php }else{ ?>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=TOTALOTHER?>:&nbsp;</td>
-                                       <td>[<a href="<?=$securebase?>/omanage.php"><?=$total_other?></a>]</td>
-                                    </tr>
-                                    <?php } ?>
-                                    <?php } ?>
-                                 </table>
+
+                                  <?php } ?>
+                                <?php }else{ ?>
+                                  <div class="row">
+                                    <div class="col-md-6 rhead"><?=TOTALDOMAINS?></div>
+                                    <div class="col-md-6 rvar"><a href="<?=$base?>/manage.php"><?=$numdomains?></a></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6 rhead"><?=TOTALHOSTED?></div>
+                                    <div class="col-md-6 rvar"><a href="<?=$securebase?>/hmanage.php"><?=$numhosted?></a></div>
+                                  </div>
+                                  <?php if ($support_link == "$securebase/helpdesk.php?search=open") { ?>
+                                  <div class="row">
+                                    <div class="col-md-6 rhead"><?=WTICKETS?></div>
+                                    <div class="col-md-6 rvar"><a href="<?=$securebase?>/helpdesk.php"><?=$total_tickets?></a></div>
+                                  </div>
+                                  <?php }else{ ?>
+                                  <div class="row">
+                                    <div class="col-md-6 rhead"><?=TOTALOTHER?></div>
+                                    <div class="col-md-6 rvar"><a href="<?=$securebase?>/omanage.php"><?=$total_other?></a></div>
+                                  </div>
+                                  <?php } ?>
+                                <?php } ?>
+                                </div>
                               </td>
                               <td class="vlt al width-50 vlt accountdetails">
                                 <div class="stat-head-title">Ügyfélkezelés</div>
-                                 <table class="width-100">
-                                    <tr>
-                                       <td class="al width-1 vlt" nowrap="nowrap" rowspan="3"><img src="templates/<?=$templatedir?>/images/people-trans.png" alt="people" width="22" height="16" /></td>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=DOMAINPROFILES?>:&nbsp;</td>
-                                       <td>[<a href="<?=$securebase?>/profilemgmt.php"><?=$counts[domainprofiles]?></a>]</td>
-                                    </tr>
-                                    <tr>
-                                       <td class="al width-30 bold" nowrap="nowrap"><?=USERSUBACCT?>:&nbsp;</td>
-                                       <td>[<a href="<?=$securebase?>/subacctmgmt.php"><?=$counts[subaccounts]?></a>]</td>
-                                    </tr>
-                                    <tr>
-                                       <td class="ac bold" colspan="2">[<a href="<?=$securebase?>/editprofile.php"><?=EDITACCTINFO?></a>]</td>
-                                    </tr>
-                                 </table>
+                                <div class="user-stat-holder">
+                                  <div class="row">
+                                    <div class="col-md-6 rhead"><?=DOMAINPROFILES?></div>
+                                    <div class="col-md-6 rvar"><a class="action-box" href="<?=$securebase?>/profilemgmt.php"><?=$counts[domainprofiles]?></a></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6 rhead"><?=USERSUBACCT?></div>
+                                    <div class="col-md-6 rvar"><a class="action-box" href="<?=$securebase?>/subacctmgmt.php"><?=$counts[subaccounts]?></a></div>
+                                  </div>
+                                  <hr>
+                                  <a class="action-btn" href="<?=$securebase?>/editprofile.php"><?=EDITACCTINFO?> <i class="fa fa-gear"></i></a>
+                                </div>
                               </td>
                            </tr>
                         </table>
-                        <hr />
                         <div>
                            <?=$boxtop?>
                            <table class="width-100 data">
@@ -238,7 +245,7 @@
                            <?=$reglist?>
                         </table>
                         <?=$boxbottom?>
-                        <p class="center">[<a href="<?=$securebase?>/journal.php"><?=VIEWALL?></a>]</p>
+                        <a class="action-btn" href="<?=$securebase?>/journal.php"><?=VIEWALL?> <i class="fa fa-eye"></i></a>
                      </div>
                      <!-- Tabs /e -->
                   </div>

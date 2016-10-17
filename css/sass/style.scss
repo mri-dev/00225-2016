@@ -11,17 +11,20 @@ body {
 	  -moz-osx-font-smoothing: grayscale;
 }
 
-.btn.btn-default, .inpSubmit {
+.btn.btn-default,
+.inpSubmit {
   background: #667373;
   color: #fff;
   font-weight: normal;
   text-shadow: none;
   border: 1px solid darken(#667373, 10%);
   padding: 0 20px;
-  line-height: 40px;
+  line-height: 32px;
+  height: 32px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  vertical-align: top;
 
 
   &:hover {
@@ -106,17 +109,13 @@ input[type=text],
 input[type=password],
 input[type=number],
 select{
-<<<<<<< HEAD
   border: 1px solid #cccfd1 !important;
-=======
-  border: 1px solid #cccfd1;
->>>>>>> origin/master
   color: $color-grey;
   padding: 0 15px;
-  line-height: 40px;
+  line-height: 32px;
   font-size: 1.2em;
-  height: 40px;
-  max-height: 40px;
+  height: 32px;
+  max-height: 32px;
 }
 
 .header {
@@ -607,6 +606,9 @@ select{
 .green {
   color: $color-green;
 }
+.orange {
+  color: orange;
+}
 .blue{
   color: darken($color-primary, 10%);
 }
@@ -639,10 +641,16 @@ table.data {
       border-bottom: 1px solid #d7d7d7;
 
       &.boxtitle{
-        font-size: 1.1em;
-        color: #222222;
+        font-size: 0.85em;
+        color: #545454;
         font-weight: bold;
         padding: 10px 0;
+        text-transform: uppercase;
+
+        a{
+          color: #545454;
+          border-bottom: 1px dotted #888888;
+        }
       }
     }
   }
@@ -651,7 +659,22 @@ table.data {
     background: #efefef;
   }
 }
+.paging{
+  text-align: center;
+  ul#paging{
+    margin: 0 auto;
+    padding: 0;
 
+    li{
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      padding: 5px 10px;
+      font-size: 0.9em;
+      color: #5c5c5c;
+    }
+  }
+}
 .labels-title {
   color: black;
   font-weight: bold;
@@ -889,16 +912,88 @@ table#mainData {
   }
 }
 
+a.action-btn{
+  background: #b1b1b1;
+  padding: 4px 10px;
+  color: white;
+  margin: 0 4px 4px 0;
+  font-size: 0.9em;
+  text-decoration: none;
+  letter-spacing: -1px;
+
+  i{
+    margin-left: 4px;
+  }
+
+  &:hover {
+    background: $color-green;
+  }
+}
+
+a.action-box{
+  background: #e0e0e0;
+  padding: 4px 10px;
+  color: black;
+  font-size: 0.9em;
+  text-decoration: none;
+  letter-spacing: -1px;
+
+  &:hover {
+    background: $color-primary;
+    color: white;
+  }
+}
+table.totalRecords{
+  background: #f2f2f2;
+  border: 1px solid #eaeaea;
+
+  td{
+    padding: 8px;
+    color: black;
+    font-weight: bold;
+  }
+
+  tr td:first-child{
+    padding-left: 16px;
+  }
+}
 table#mainData.account-page {
   fieldset{
+    position: relative;
     legend{
-      background: $color-grey;
+      background: darken($color-grey, 18%);
       color: white;
       padding: 10px 0;
       margin: 0 0 25px 0;
       border: none;
     }
     margin: 0 0 25px 0;
+  }
+
+  .account-page-holder {
+    .sidemenu,
+    .account-contant-container{
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      margin: 0 -2px;
+      vertical-align: top;
+    }
+
+    .sidemenu{
+      width: 25%;
+    }
+
+    .account-contant-container{
+      padding-left: 20px;
+      width: 75%;
+    }
+  }
+
+  .domain-search-welcome{
+    position: absolute;
+    right: 0;
+    bottom: -35px;
   }
 
   .yourstats{
@@ -916,7 +1011,7 @@ table#mainData.account-page {
     color: black;
     font-size: 0.85em;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     text-transform: uppercase;
     position: relative;
 
@@ -931,6 +1026,28 @@ table#mainData.account-page {
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
       transform: translateX(-50%);
+    }
+  }
+
+  .user-stat-holder{
+    padding: 0 15px 15px 15px;
+    .rhead{
+      color: black;
+    }
+    .rvar{
+      text-align: right;
+      font-weight: bold;
+      font-size:1.1em;
+    }
+
+    .row > div {
+      padding-bottom: 5px;
+    }
+
+    hr {
+      margin: 5px 0;
+      height: 2px;
+      background: #e6e6e6;
     }
   }
 
@@ -950,7 +1067,7 @@ table#mainData.account-page {
     background: #fafafa;
     border: 1px solid #f1f1f1;
     position: relative;
-    margin-top: 75px;
+    margin-top: 50px;
 
     ul.tab-menu{
       position: absolute;
@@ -1180,7 +1297,7 @@ table.price {
     }
   }
 }
-<<<<<<< HEAD
+
 #createacct{
   table.formtable{
     td {
@@ -1208,9 +1325,7 @@ table.price {
 .morespace {
   margin: 12px 0;
 }
-=======
 
->>>>>>> origin/master
 table.data.alc{
   td.boxtitle {
     font-size: 1.3em;
@@ -1477,6 +1592,5 @@ h2.hsignup{
 .width-90{
   width: 90%;
 }
-
 
 @import 'footer';

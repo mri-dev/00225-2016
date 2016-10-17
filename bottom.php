@@ -48,6 +48,10 @@
                 <span class="sep">|</span>
                 <?php } ?>
                 <a href="<?=$base?>/terms.php"><?=BMENU11?></a>
+
+                <div class="price-info">
+                  Az oldalon feltüntetett áraink Bruttó árak!
+                </div>
             </div>
             <div class="contact-list">
               <div>Telefon: <span class="value"><?php echo $this->data['companyphone']; ?></span></div>
