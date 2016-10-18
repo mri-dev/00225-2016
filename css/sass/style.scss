@@ -633,7 +633,34 @@ select{
 .vlb{
   vertical-align: bottom;
 }
+.alert{
+  background: #fff1ef;
+  border: 1px dashed red;
+}
+.inp-btn-wlabel{
+  margin-top: 27px;
+}
+.abcfilter{
+  border: 1px solid #d7d7d7;
+  border-left: none;
+  border-right: none;
+  margin: 10px 0;
+  padding: 5px;
+  text-align: center;
 
+  a{
+    padding: 2px 4px;
+    line-height: 1;
+    margin: 2px;
+    color: #888888;
+    font-size: 0.9em;
+    &.on,
+    &:hover{
+      background: $color-primary;
+      color: white;
+    }
+  }
+}
 table.data {
   & > tbody{
     & > tr > td {
@@ -957,6 +984,12 @@ table.totalRecords{
     padding-left: 16px;
   }
 }
+.reqfieldsnote {
+    color: #f37f6d;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+}
 table#mainData.account-page {
   fieldset{
     position: relative;
@@ -982,11 +1015,25 @@ table#mainData.account-page {
 
     .sidemenu{
       width: 25%;
+      padding-right: 20px;
     }
 
     .account-contant-container{
-      padding-left: 20px;
       width: 75%;
+    }
+  }
+
+  .topup{
+    background: #eaeaea;
+    padding: 10px;
+    border: 1px solid #d7d7d7;
+    margin-top: 25px;
+
+    input[type=text]{
+      margin: 0 5px;
+    }
+    input[type=submit]{
+      margin: 10px 0 0 0;
     }
   }
 
@@ -1298,19 +1345,21 @@ table.price {
   }
 }
 
-#createacct{
-  table.formtable{
-    td {
-      padding: 10px;
-    }
-    tr td:first-child{
-      line-height: 40px;
-    }
-    tr td:last-child{
-      color: #aaaaaa;
-      font-size: 0.9em;
-    }
+table.formtable{
+  td {
+    padding: 10px;
   }
+  tr td:first-child{
+    line-height: 40px;
+  }
+  tr td:last-child{
+    color: #aaaaaa;
+    font-size: 0.9em;
+  }
+}
+
+#createacct{
+
   .ccaHeader{
     text-align: center;
     padding: 8px 0;

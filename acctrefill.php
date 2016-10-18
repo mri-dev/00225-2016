@@ -69,15 +69,15 @@
 											</td>
 										</tr>
 									</table>
-									<table class="width-100">
-										<tr>
-											<td class="ac vlt width-25">
-											<span class="bold"><?=REFILLAMOUNT?>:</span>
-											<span class="red"><?=LCURRENCYSYMBOL?>&nbsp;<input type="text" maxlength="20" size="8" name="total_charge" class="validate['digit'] red ac bold" id="idsld" /><?=RCURRENCYSYMBOL?></span>
-											<p class="ac p-5"><input type="submit" name="Submit" value="<?=SUBMIT?>" /></p>
-											</td>
-										</tr>
-									</table>
+									<div class="row">
+										<div class="col-md-12 ar">
+											<div class="topup">
+											<?=REFILLAMOUNT?>:
+											<?=LCURRENCYSYMBOL?>&nbsp;<input type="text" maxlength="20" size="8" name="total_charge" class="validate['digit'] red ac bold" id="idsld" /><?=RCURRENCYSYMBOL?><br>
+											<input type="submit" name="Submit" value="<?=SUBMIT?>" />
+											</div>
+										</div>
+									</div>
 							</fieldset>
 							<?=$boxbottom?>
 							<div class="ac p-20"><?=$payment_images?></div>
