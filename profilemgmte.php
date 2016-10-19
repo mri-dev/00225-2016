@@ -172,7 +172,7 @@
 							 <?=$boxbottom?>
 							 <?=$boxtop?>
 							 <fieldset>
-									
+
 									<table class="width-100">
 										 <tr>
 												<td class="ac vlt" colspan="2">
@@ -210,27 +210,6 @@
 						}
 					 })});
 				</script>
-
-
-         <?php if (!$clientportal) { ?>
-         <table class="width-99 alc">
-            <tr>
-               <td class="width-20 vlt"><?=$umenu?></td>
-               <td class="width-1">&nbsp;</td>
-               <td class="width-100 vlt">
-                  <!-- user menu /s -->
-                  <?php } ?>
-
-                  <?php if (!$clientportal) { ?>
-                  <!-- user menu /e -->
-               </td>
-            </tr>
-         </table>
-         <?php } ?>
-
-
-
-
       </td>
    </tr>
 </table>
