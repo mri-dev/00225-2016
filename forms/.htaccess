@@ -1,0 +1,3 @@
+<FilesMatch "\.(inc|php)$">
+deny from all
+</FilesMatch>

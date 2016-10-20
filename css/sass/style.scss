@@ -78,6 +78,20 @@ body {
       color: white;
     }
   }
+  &.btn-red{
+    background: $color-red;
+    border: 1px solid darken($color-red, 5%);
+
+    &:hover {
+      background: darken($color-red, 5%);
+      border: 1px solid darken($color-red, 10%);
+      color: white;
+    }
+    &:active:hover {
+      background: darken($color-red, 10%);
+      color: white;
+    }
+  }
 }
 
 .btn{
@@ -259,6 +273,7 @@ select{
 
       input, button{
         height: 50px;
+        max-height: 50px;
         line-height: 50px;
         width: 100%;
         border: 1px solid #cccfd1;
@@ -635,7 +650,8 @@ select{
 }
 .alert{
   background: #fff1ef;
-  border: 1px dashed red;
+  border: 1px dashed $color-red;
+  color: $color-red;
 }
 .inp-btn-wlabel{
   margin-top: 27px;
@@ -1550,6 +1566,161 @@ h2.hsignup{
     color: white;
     background: $color-primary;
     border: 1px solid darken($color-primary, 10%);
+  }
+}
+
+.ticket-counts{
+
+  .row {
+    margin: 0 !important;
+  }
+  .row > div {
+    padding: 0 !important;
+  }
+
+  .ticket-head,
+  .ticket-count{
+    line-height: 50px;
+    padding: 0;
+  }
+
+  .ticket-head{
+    background: #f1f1f1;
+    text-transform: uppercase;
+    padding: 0 15px;
+  }
+  .ticket-count{
+    background: #afafaf;
+    font-weight: bold;
+    text-align: center;
+
+    a{
+      position: relative;
+      display: block;
+      color: white;
+
+      &:before {
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        content:"";
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent #afafaf transparent transparent;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .ticket-open{
+    .ticket-head{
+      background: lighten(desaturate($color-green, 15), 10%);
+      color: white;
+    }
+    .ticket-count{
+      a{
+        background: darken($color-green, 5%);
+        color: white;
+
+        &:before {
+          border-color: transparent darken($color-green, 5%) transparent transparent;
+        }
+
+        &:hover{
+          background: darken($color-green, 10%);
+          &:before {
+            border-color: transparent darken($color-green, 10%) transparent transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .ticket-waiting{
+    .ticket-head{
+      background: desaturate($color-orange, 15);
+      color: white;
+    }
+    .ticket-count{
+      a{
+        background: darken($color-orange, 5%);
+        color: white;
+
+        &:before {
+          border-color: transparent darken($color-orange, 5%) transparent transparent;
+        }
+        &:hover{
+          background: darken($color-orange, 10%);
+          &:before {
+            border-color: transparent darken($color-orange, 10%) transparent transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .ticket-hold{
+    .ticket-head{
+      background: desaturate(#555555, 15);
+      color: white;
+    }
+    .ticket-count{
+      a{
+        background: darken(#555555, 5%);
+        color: white;
+
+        &:before {
+          border-color: transparent darken(#555555, 5%) transparent transparent;
+        }
+        &:hover{
+          background: darken(#555555, 10%);
+          &:before {
+            border-color: transparent darken(#555555, 10%) transparent transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .ticket-closed{
+    .ticket-head{
+      background: lighten(desaturate($color-red, 25), 10%);
+      color: white;
+    }
+    .ticket-count{
+      a{
+        background: darken($color-red, 5%);
+        color: white;
+
+        &:before {
+          border-color: transparent darken($color-red, 5%) transparent transparent;
+        }
+        &:hover{
+          background: darken($color-red, 10%);
+          &:before {
+            border-color: transparent darken($color-red, 10%) transparent transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .ticket-new{
+    a {
+      background: $color-primary;
+      color:white;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold;
+      display: block;
+      padding: 0 10px;
+      line-height: 50px;
+
+      &:hover {
+        background: darken($color-primary, 10%);
+      }
+    }
   }
 }
 
