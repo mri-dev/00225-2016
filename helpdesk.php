@@ -51,10 +51,10 @@
                         <legend><span class="boxlegend"><?=TICKETS?></span></legend>
 												<div class="ticket-counts">
 													<div class="row">
+
 														<div class="col-md-6">
-															<div class="row ticket-open">
-																<div class="col-md-6"><div class="ticket-head"><?=OPEN?></div></div>
-																<div class="col-md-6"><div class="ticket-count"><a href="<?=$securebase?>/helpdesk.php?search=open"><?=$hd_stats[0]?> <i class="fa fa-ticket"></i></a></div></div>
+															<div class="row ticket-new">
+																<div class="col-md-12"><a href="<?=$securebase?>/helpdesk.php?action=add_request"><i class="fa fa-plus-circle"></i> <?=OPENTICKET?></a></div>
 															</div>
 														</div>
 														<div class="col-md-6">
@@ -66,9 +66,9 @@
 													</div>
 													<div class="row">
 														<div class="col-md-6">
-															<div class="row ticket-hold">
-																<div class="col-md-6"><div class="ticket-head"><?=HOLD?></div></div>
-																<div class="col-md-6"><div class="ticket-count"><a href="<?=$securebase?>/helpdesk.php?search=hold"><?=$hd_stats[2]?> <i class="fa fa-ticket"></i></a></div></div>
+															<div class="row ticket-open">
+																<div class="col-md-6"><div class="ticket-head"><?=OPEN?></div></div>
+																<div class="col-md-6"><div class="ticket-count"><a href="<?=$securebase?>/helpdesk.php?search=open"><?=$hd_stats[0]?> <i class="fa fa-ticket"></i></a></div></div>
 															</div>
 														</div>
 														<div class="col-md-6">
@@ -80,14 +80,15 @@
 													</div>
 													<div class="row">
 														<div class="col-md-6">
-															<div class="row ticket-all">
-																<div class="col-md-6"><div class="ticket-head"><?=TOTAL?></div></div>
-																<div class="col-md-6"><div class="ticket-count"><a href="<?=$securebase?>/helpdesk.php"><?=$hd_stats[3]?> <i class="fa fa-ticket"></i></a></div></div>
+															<div class="row ticket-hold">
+																<div class="col-md-6"><div class="ticket-head"><?=HOLD?></div></div>
+																<div class="col-md-6"><div class="ticket-count"><a href="<?=$securebase?>/helpdesk.php?search=hold"><?=$hd_stats[2]?> <i class="fa fa-ticket"></i></a></div></div>
 															</div>
 														</div>
 														<div class="col-md-6">
-															<div class="row ticket-new">
-																<div class="col-md-12"><a href="<?=$securebase?>/helpdesk.php?action=add_request"><i class="fa fa-plus-circle"></i> <?=OPENTICKET?></a></div>
+															<div class="row ticket-all">
+																<div class="col-md-6"><div class="ticket-head"><?=TOTAL?></div></div>
+																<div class="col-md-6"><div class="ticket-count"><a href="<?=$securebase?>/helpdesk.php"><?=$hd_stats[3]?> <i class="fa fa-ticket"></i></a></div></div>
 															</div>
 														</div>
 													</div>
