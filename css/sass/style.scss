@@ -147,21 +147,35 @@ select{
             *display: inline;
             zoom: 1;
             border-left: 1px solid lighten($color-primary, 25%);
-            padding: 8px 14px;
+            padding: 0 14px;
             font-size: 0.85em;
+            height: 34px;
+            line-height: 34px;
+            vertical-align: middle;
 
             a {
                 color: white;
                 text-decoration: none;
                 display: block;
+                height: 34px;
+                line-height: 34px;
 
                 .fa-stack{
                   font-size: 8px;
+                  vertical-align: top;
                 }
                 i[class*=fa-info] {
                   font-size: 8px !important;
                 }
+              i{
+                line-height: 34px;
+              }
             }
+
+          &.user-block{
+            background: $color-grey;
+            color: white;
+          }
         }
     }
 }
@@ -1653,6 +1667,66 @@ h2.hsignup{
       &:hover {
         background: darken($color-primary, 10%);
       }
+    }
+  }
+}
+
+.payment-page{
+  table.cart-table{
+    tr:first-child{
+      td{
+        background: #fafafa;
+        padding: 10px;
+        font-weight: bold;
+        color: black;
+      }
+    }
+
+    td {
+      padding: 10px;
+    }
+  }
+}
+
+#helpdesk{
+  fieldset{
+    margin: 15px 0 !important;
+    legend{
+      margin: 0 !important;
+    }
+  }
+
+  td.boxtitle {
+    color: black;
+    padding: 10px 0;
+    font-size: 1.2em;
+  }
+
+  .ticket-origin-msg{
+    font-weight: bold;
+    font-size: 1.2em;
+    background: #fafafa;
+    color: black;
+    padding: 15px;
+    border: 2px solid #3b4242;
+  }
+
+  .ticket-resp-table{
+    td{
+      border:none;
+    }
+
+    tr.row1_1 td{
+      background: #f8f8f8;
+      padding: 15px;
+      color: #909090;
+      font-size: 0.95em;
+    }
+    tr.row1_0 td{
+      background: #eaeaea;
+      padding: 15px;
+      color: #353535;
+      font-size: 1.05em;
     }
   }
 }

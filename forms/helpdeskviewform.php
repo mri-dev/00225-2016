@@ -2,6 +2,7 @@
 echo "
 
 $boxtop
+<div class=\"al\"><a href=\"/helpdesk.php\">Vissza</a></div>
 <table class=\"width-100 data\">
 	<tr>
 		<td colspan=\"2\" class=\"boxtitle\"><span class=\"boxlegend\">".TICKETEDITOR."</span></td>
@@ -43,7 +44,7 @@ $boxtop
 		<td class=\"al width-75\">&nbsp;$statuslist</td>
 	</tr>
 	<tr>
-		<td colspan=\"2\" class=\"al\"><hr />$hd_fold_request<hr /></td>
+		<td colspan=\"2\" class=\"al ticket-origin-msg\">$hd_fold_request</td>
 	</tr>
 	<tr>
 		<td colspan=\"2\" class=\"ac\">$ticketcloselink</td>
@@ -52,7 +53,7 @@ $boxtop
 $boxbottom
 <br />
 $boxtop
-<table class=\"width-100 data\">
+<table class=\"width-100 data ticket-resp-table\">
 	<tr>
 		<td class=\"boxtitle\"><span class=\"boxlegend\">".HDTICKETRESPONSES."</span></td>
 	</tr>
@@ -61,24 +62,24 @@ $boxtop
 $boxbottom
 <br />
 $boxtop
-<table class=\"width-100 data\">			
+<table class=\"width-100 data\">
 	<tr>
 		<td class=\"boxtitle\"><span class=\"boxlegend\">".HDENTERRESPONSE."</span></td>
 	</tr>
 	<tr>
-		<td class=\"row_11 ac\"><textarea rows=\"10\" cols=\"70\" name=\"hd_request\" class=\"formtextarea\">$hd_request</textarea></td>
+		<td class=\"row_11 ac width-100\"><textarea rows=\"10\" name=\"hd_request\" class=\"formtextarea width-100\">$hd_request</textarea></td>
 	</tr>
 	<tr>
 		<td colspan=\"2\" class=\"row_11 ac\">
 			<input type=\"hidden\" name=\"action\" value=\"$hd_action\" />
 			<input type=\"hidden\" name=\"catlist\" value=\"$catlist\" />
 			<input type=\"hidden\" name=\"statuslist\" value=\"$statuslist\" />
-			<input type=\"hidden\" name=\"id\" value=\"$id\" />	
+			<input type=\"hidden\" name=\"id\" value=\"$id\" />
 			<input type=\"file\" size=\"32\" name=\"a_file[]\" value=\"\" />
 			<br /><input type=\"file\" size=\"32\" name=\"a_file[]\" value=\"\" />
 			<br /><input type=\"file\" size=\"32\" name=\"a_file[]\" value=\"\" />
 			<br />
-			<input type=\"submit\" name=\"submit\" value=\"$button_text\" />	
+			<input type=\"submit\" name=\"submit\" value=\"$button_text\" />
 		</td>
 	</tr>
 </table>

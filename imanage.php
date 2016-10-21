@@ -20,7 +20,7 @@ function checkedAll (frm1) {
 <!-- Contents /s -->
 <table id="mainData" class="account-page">
 	<tr>
-		<td id="tablehead"><?=IMANAGETITLE?>&nbsp;<?=$help_icon?></td>
+		<td id="tablehead"><h1><?=IMANAGETITLE?>&nbsp;<?=$help_icon?></h1></td>
 	</tr>
 	<tr>
 		<td id="mainTD">
