@@ -1875,6 +1875,105 @@ h2.hsignup{
   }
 }
 
+.info-blocks{
+  margin: 25px 0 0 0;
+  .item{
+    .item-wrapper{
+      border: 1px solid #e5e8eb;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      padding: 10px;
+
+      .image{
+        position: relative;
+        height: 200px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .price{
+        position: absolute;
+        top: 60px;
+        background: #667373;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        margin: 0 auto;
+        font-size: 1em;
+        width: 100px;
+        height: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        border: 2px solid #ffffff;
+        -webkit-box-shadow: 2px 2px 14px -5px #000000;
+        -moz-box-shadow: 2px 2px 14px -5px #000000;
+        box-shadow: 2px 2px 14px -5px #000000;
+
+        .p {
+          font-size: 1.6em;
+          font-weight: bold;
+          padding-top: 25px;
+          line-height: 1.2;
+        }
+
+        &.to-left{
+          left: 10px;
+          right: auto;
+        }
+        &.to-right{
+          right: 10px;
+          left: auto;
+        }
+
+        &.price-green{
+          background: $color-green;
+        }
+        &.price-red{
+          background: $color-red;
+        }
+      }
+
+      h2{
+        margin: 0;
+        font-weight: bold;
+        color: #53605F;
+      }
+
+      .desc{
+        font-size: 0.8em;
+        color: lighten($color-grey, 5%);
+        text-align: justify;
+        .i{
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: darken($color-grey, 5%);
+        }
+      }
+
+      .button{
+        margin-top: 10px;
+        a {
+          float: right;
+          background: $color-red;
+          color: white;
+          text-transform: uppercase;
+          font-size: 1.1em;
+          line-height: 1.8;
+          padding: 0 15px;
+          border-radius: 5px;
+
+          &:hover{
+            background: darken($color-red, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
 ol.square{
   margin: 10px 0;
   padding: 0 0 0 20px;
