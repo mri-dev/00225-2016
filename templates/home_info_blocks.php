@@ -51,7 +51,7 @@
         <div class="item">
           <div class="item-wrapper">
             <div class="image" style="background-image: url('<?=$currentbase?>/templates/<?=$templatedir?>/images/info-box-server2-right.jpg');">
-              <h2>Szerver Hoszting</h2>
+              <h2>Szerver hoszting</h2>
               <div class="price price-green to-left">
                 <div class="p">10 000</div>
                 Ft / hótól
