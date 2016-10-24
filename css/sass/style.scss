@@ -132,6 +132,22 @@ select{
   max-height: 32px;
 }
 
+#cartitemsnum{
+  position: absolute;
+  background: $color-red;
+  color: white;
+  line-height: 24px;
+  width: 24px;
+  text-align: center;
+  font-size: 13px;
+  right: -7px;
+  bottom: -7px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  z-index: 1000;
+}
+
 .header {
     background: $color-primary;
     padding: 1px 0;
@@ -142,6 +158,7 @@ select{
         padding: 0;
 
         li {
+            position: relative;
             color: white;
             display: inline-block;
             *display: inline;
@@ -174,7 +191,12 @@ select{
 
           &.user-block{
             background: $color-grey;
+            border-left: 1px solid lighten($color-grey, 10%);
             color: white;
+          }
+          &.cart-block{
+            background: darken($color-primary, 10%);
+            border-left: 1px solid lighten($color-primary, 10%);
           }
         }
     }
@@ -784,16 +806,53 @@ th.head{
 }
 
 .cart-container{
+  table {
+    td {
+      padding: 10px;
+      background: #f5f5f5;
+      border-bottom: 1px solid #eaeaea;
+      border-top: 1px solid #ffffff;
+    }
+
+    td:first-child{
+      text-align: center;
+      width: 5%;
+    }
+
+    tr.row1_0{
+      td{
+        background: #f5f5f5;
+
+      }
+    }
+    tr.row1_0 + tr.row1_0 {
+      td {
+        font-size: 0.9em;
+        background: #ffffff;
+      }
+      td:first-child{
+        background: #f5f5f5;
+      }
+      td:nth-child(2){
+        border-left: 5px solid #eaeaea;
+        padding-left: 15px;
+      }
+    }
+    tr.row1_1{
+      td{
+
+      }
+    }
+  }
+
   .refresh-cart{
     border-top: 2px dashed #d3d3d3;
     font-size: 0.85em;
     padding: 10px 0 0 0;
-  }
-
-  table {
-    td {
-      padding: 8px 0;
-    }
+    background: transparent;
+    line-height: 30px;
+    border-bottom: none;
+    padding: 10px;
   }
 
   .remove-cart{
@@ -914,6 +973,10 @@ table.transcheck{
   padding: 10px;
   margin: 10px 0;
   font-size: 1.1em;
+
+  &:before{
+    content: "\f058";
+  }
 }
 
 .warning{
@@ -922,6 +985,10 @@ table.transcheck{
   padding: 10px;
   margin: 10px 0;
   font-size: 1.1em;
+
+  &:before{
+    content: "\f05a";
+  }
 }
 .error{
   background: $color-red;
@@ -929,6 +996,26 @@ table.transcheck{
   padding: 10px;
   margin: 10px 0;
   font-size: 1.1em;
+  &:before{
+    content: "\f05a";
+  }
+}
+
+.success,
+.warning,
+.error{
+  position: relative;
+  padding-left: 45px;
+  line-height: 24px;
+
+  &:before{
+    font-family: "FontAwesome";
+    position: absolute;
+    line-height: 24px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
 }
 
 .tip-wrap{
@@ -966,6 +1053,31 @@ table#mainData {
 
   td#mainTD {
     padding-top: 20px;
+  }
+}
+
+#cart{
+  .cart-msg{
+    font-size: 15px;
+  }
+  table#mainData{
+    td#tablehead{
+      padding: 25px 0 0 0;
+      .subcartmsg{
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+    td#mainTD{
+      padding: 0;
+
+      fieldset{
+        legend{
+          background: $color-grey;
+          color: white;
+        }
+      }
+    }
   }
 }
 
@@ -1497,15 +1609,17 @@ h2.hsignup{
   .details-important{
     width: 35%;
     padding: 0 10px;
+    border-right: 1px solid #d7d7d7;
 
     .image {
       text-align: center;
-      width: 100%;
+      height: 100px;
       padding-bottom: 10px;
       margin-bottom: 10px;
       border-bottom: 1px solid #d7d7d7;
       img{
         margin: 0 auto;
+        height: 100%;
       }
     }
 
@@ -1549,11 +1663,16 @@ h2.hsignup{
   .details-features{
     width: 65%;
     padding-left: 10px;
-    border-left: 1px solid #d7d7d7;
 
     .feat-var{
       font-weight: bold;
       color: black;
+    }
+  }
+  table.server-features{
+    td {
+      font-size: 1.1em;
+      padding: 10px 0;
     }
   }
 }
@@ -1728,6 +1847,43 @@ h2.hsignup{
       color: #353535;
       font-size: 1.05em;
     }
+  }
+}
+
+.support-page{
+  .img{
+    width: 20%;
+    padding: 0 20px 20px 0;
+    float: left;
+
+    img{
+      width: 100%;
+    }
+  }
+  .textblock{
+    float:left;
+  }
+  .support-desc{
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+  }
+  .support-footer{
+    padding: 20px 0 0 0;
+    margin: 20px 0 0 0;
+    border-top: 1px solid #d7d7d7;
+  }
+}
+
+ol.square{
+  margin: 10px 0;
+  padding: 0 0 0 20px;
+
+  li{
+    background: #dee5eb;
+    margin: 5px 0;
+    padding: 8px;
+    color: #7e8b96;
   }
 }
 

@@ -8,9 +8,8 @@
       <tr>
          <td id="tablehead">
 					 <h1><?=$carttitle?>&nbsp;<?=$help_icon?></h1>
-					 <br>
-					 <?=$cartblurb?>
-					 <?=$dmsg?>
+           <div class="subcartmsg"><?=$cartblurb?></div>
+           <div class="cart-msg"><?=$dmsg?></div>
 				 </td>
       </tr>
       <tr>

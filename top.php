@@ -26,7 +26,7 @@
 						Support</a></li><!--
 			 --><li><a href="mailto:<?=$this->data['salesmail']?>">Email</a></li><!--
 			 --><li>+<?=$companyphone?></li><!--
-			 --><li class="cart-block"><a href="<?=$base?>/cart.php">Kosár <i class="fa fa-shopping-cart"></i></a></li><!--
+			 --><li class="cart-block"><a href="<?=$base?>/cart.php"><? if($this->data['curcart']['items'] != '0'): ?><div id="cartitemsnum"><?=$this->data['curcart']['items']?></div><? endif; ?>Kosár <i class="fa fa-shopping-cart"></i></a></li><!--
 			 --><?php	if ($LoggedIn== "1"){ ?><li class="user-block"><a href="<?=$base?>/welcome.php"><?=HELLO?>, <strong><?=ucfirst($newuid)?></strong>!</a></li><!--
 			 --><li class="user-logout"><a href="<?=$base?>/LogOut.php" title="<?=TMENU7B?>"><i class="fa fa-sign-out"></i></a></li>
 					<? } ?>

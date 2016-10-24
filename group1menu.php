@@ -71,30 +71,7 @@
 	</ul>
 </li>
 <?php
-if ($LoggedIn== "1"){ ?>
-<li class="has-sub">
-	<a href="<?=$securebase?>/welcome.php" class="<?=$page_accntSelected?>"><?=TMENU7?></a>
-	<ul>
-		<li><a href="<?=$securebase?>/LogOut.php" ><?=TMENU7B?></a></li>
-		<li><a href="<?=$securebase?>/welcome.php" ><?=TMENU7C?></a></li>
-		<li><a href="<?=$base?>/cart.php" ><?=TMENU7E?></a></li>
-		<?php if ($LoggedIn == "1" and $adminflag > "0") { ?><li><a href="<?=$securebase?>/admin/adminwelcome.php"><?=TMENU7F?></a></li><?php } ?>
-	</ul>
-</li>
-<?php }else{ ?>
-<li class="has-sub">
-	<a href="<?=$securebase?>/aLogIn.php" class="<?=$page_accntSelected?>"><?=TMENU7?></a>
-	<ul>
-		<li><a href="<?=$securebase?>/aLogIn.php"><?=TMENU7A?></a></li>
-		<li><a href="<?=$securebase?>/createacct.php"><?=TMENU7D?></a></li>
-		<li><a href="<?=$base?>/cart.php"><?=TMENU7E?></a></li>
-	</ul>
-</li>
-<?php } ?>
-<?php
-if ($LoggedIn== "1"){ ?>
-<li><a href="<?=$securebase?>/LogOut.php" class="<?=$page_acctSelected?> ac logged-in iconed"><?=TMENU7B?> <i class="fa fa-sign-out"></i> </a></li>
-<?php }else{ ?>
+if ($LoggedIn != "1"){ ?>
 <li><a href="<?=$securebase?>/aLogIn.php" class="<?=$page_acctSelected?> ac need-login iconed"><?=TMENU7A?> <i class="fa fa-user"></i></a></li>
 <?php } ?>
 </ul>
