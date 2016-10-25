@@ -1327,16 +1327,13 @@ table#mainData.account-page {
 
     .domain-name{
       text-align: left;
+      line-height: 24px;
     }
     .expire-date{
       text-align: right;
-
-      strong.red{
-        background: $color-red;
-        color: white;
-        font-size: 0.9em;
-        padding: 4px;
-      }
+      font-size: 0.8em;
+      color: #8c8c8c;
+      line-height: 24px
     }
   }
 }

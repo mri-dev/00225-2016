@@ -28,14 +28,14 @@
      	      <div class="account-contant-container">
 							<div class="domain-managed-item">
 								<div class="row">
-									<div class="col-md-6">
+									<div class="col-md-6 vlm">
 										<div class="domain-name mobile-align-left">
 										<?=DOMAIN?>: <strong><?=$cSld?>.<?=$cTld?></strong> <a href="DomainMain.php?cSld=<?=$cSld?>&amp;cTld=<?=$cTld?>" class="TipStyle action-btn" title="<?=TIPINFOTEXT?>" rel="<?=DOMAINMANAGEMENTBLURB?>"><?=MANAGE?><i class="fa fa-gear"></i></a>
 										</div>
 									</div>
-									<div class="col-md-6">
+									<div class="col-md-6 vlm">
 										<div class="expire-date mobile-align-left">
-											<?=DOMEXPDATE?>: <strong class="red"><?=$ExpDate?></strong>
+											<?=DOMEXPDATE?>: <strong><?=$ExpDate?></strong>
 										</div>
 									</div>
 								</div>
