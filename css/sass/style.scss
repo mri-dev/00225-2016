@@ -997,16 +997,32 @@ table.transcheck{
   margin: 10px 0;
   font-size: 1.1em;
   &:before{
+    content: "\f06a";
+  }
+}
+.info{
+  background: lighten($color-primary, 10%);
+  color: #ffffff;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.1em;
+  &:before{
     content: "\f05a";
   }
 }
 
 .success,
 .warning,
-.error{
+.error,
+.info{
   position: relative;
   padding-left: 45px;
   line-height: 24px;
+
+  a:link, a:visited{
+    color: white;
+    text-decoration: underline;
+  }
 
   &:before{
     font-family: "FontAwesome";
@@ -1301,8 +1317,67 @@ table#mainData.account-page {
   }
 }
 
+.domain-manager-page{
+  .domain-managed-item{
+    margin-bottom: 10px;
+    background: #fafafa;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 1px solid #d7d7d7;
+
+    .domain-name{
+      text-align: left;
+    }
+    .expire-date{
+      text-align: right;
+
+      strong.red{
+        background: $color-red;
+        color: white;
+        font-size: 0.9em;
+        padding: 4px;
+      }
+    }
+  }
+}
+
 #uvmenu{
   padding-right: 15px;
+
+  &.simple-menu{
+    ul{
+      border: 1px solid #d7d7d7;
+      list-style:none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0;
+        margin: 0;
+
+        &.head{
+          background: #eaeaea;
+          color: black;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 1em;
+          padding: 10px;
+          position: relative;
+        }
+
+        a{
+          font-size: 0.9em;
+          padding: 10px;
+          display: block;
+          color: #8a8a8a;
+
+          &:hover{
+            color: #444444;
+          }
+        }
+      }
+    }
+  }
 
   .CollapsiblePanel{
     border: 1px solid #d7d7d7;
@@ -1848,6 +1923,43 @@ h2.hsignup{
       font-size: 1.05em;
     }
   }
+}
+
+#watermarklogo{
+  position: fixed !important;
+  top: 0;
+  right: 0;
+}
+
+.unselected, .selected {
+  position: relative;
+  width:20px;
+  height: 20px;
+
+  &:before{
+    content:"";
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0;
+    color: #acacac;
+  }
+}
+
+.unselected{
+  cursor: pointer;
+}
+
+.unselected:hover{
+  &:before{
+    color: #444444;
+  }
+}
+.unselected:before{
+  content: "\f1db";
+}
+.selected:before{
+  content: "\f05d";
+  color: $color-primary;
 }
 
 .support-page{
