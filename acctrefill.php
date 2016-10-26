@@ -26,7 +26,7 @@
 					<form method="post" action="acctrefill.php" id="form1" name="form1" class="awform">
 			      <input type="hidden" name="action" value="check" />
 					  <?php if ( $cAction != "check" ) { ?>
-							<div class="info">
+							<div class="">
 							<?=$boxtop?>
 							<fieldset>
 								<legend><?=DEPINFO?></legend>

@@ -276,6 +276,10 @@ select{
     margin: 0 auto;
 }
 
+.mac{
+  margin: 0 auto;
+}
+
 #content {
 
 }
@@ -1336,6 +1340,9 @@ table#mainData.account-page {
       line-height: 24px
     }
   }
+  td#tablehead{
+    padding: 25px 0 0 0 !important;
+  }
 }
 
 #uvmenu{
@@ -1564,12 +1571,16 @@ table.formtable{
     padding: 10px;
   }
   tr td:first-child{
-    line-height: 40px;
+    line-height: 1.3;
+    padding-top: 12px;
   }
   tr td:last-child{
-    color: #aaaaaa;
     font-size: 0.9em;
   }
+}
+
+input.disabledInput{
+  border: 1px dashed #dddddd;
 }
 
 #createacct{
@@ -1930,8 +1941,7 @@ h2.hsignup{
 
 .unselected, .selected {
   position: relative;
-  width:20px;
-  height: 20px;
+  padding-left: 20px;
 
   &:before{
     content:"";

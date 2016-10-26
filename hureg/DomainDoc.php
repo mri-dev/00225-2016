@@ -1,8 +1,7 @@
 <?php
-   // Detect that we can call this script at all
-   if ($domainstateid != "3" || empty($declid)) {
-   	header('Location: DomainMain.php');
-   	exit;
+   if ($domainstateid != "3" && $domainstateid != "34" && $domainstateid != "9" && $domainstateid != "25") {
+     header('Location: DomainMain.php');
+     exit;
    }
    ?>
 <?=$header?>
@@ -33,7 +32,6 @@
                </div>
             </div>
             <div class="account-contant-container">
-               <?php if($declstatus != "ok") {?>
                <div class="domain-managed-item">
                   <div class="row">
                      <div class="col-md-12 vlm">
@@ -43,33 +41,23 @@
                      </div>
                   </div>
                </div>
-               <!---->
-               <form method="post" action="DomainDecl.php" name="sdform" id="sdform" class="awform" onsubmit="submitonce(this);showObject(false,true);">
-                  <input type="hidden" name="action" value="senddeclaration" />
-                  <input type="hidden" name="declid" value="<?=$declid?>" />
-                  <fieldset>
-                     <legend><?=DOMDECLARATION?></legend>
-										 <div class="row">
-										 	<div class="col-md-12">
-										 		<div class="ac">
-										 			<textarea name="decltext" rows="10" class="form-control" readonly="readonly"><?=$decltext?></textarea>
-										 		</div>
-										 	</div>
-										 </div>
-										 <br>
-										 <div class="row">
-										 	<div class="col-md-12">
-										 		<div class="ac">
-										 			<img class="mac" src="data:image/png;base64,<?=$declcaptcha?>" /><br><br>
-													<input type="text" class="width-50 mac" name="declcaptcha" /><br><br>
-													<input type="submit" name="Submit" value="<?=DMSAVE?>" />
-										 		</div>
-										 	</div>
-										 </div>
-                  </fieldset>
-               </form>
-               <!---->
-               <? } ?>
+               <fieldset>
+                 <legend><?=UPLOADDOCSLINK?></legend>
+                 <div class="row">
+                    <div class="col-md-12">
+                       <div class="ac">
+                         <br>
+                          <!---->
+                          <form method="post" action="DomainDoc.php" name="sdform" id="sdform" enctype="multipart/form-data" class="awform" onsubmit="submitonce(this);showObject(false,true);">
+                             <input type="hidden" name="action" value="uploaddocs" />
+                             <input type="file" name="file" class="mac" /><br>
+                             <input type="submit" name="Submit" value="<?=DMSAVE?>" />
+                          </form>
+                          <!---->
+                       </div>
+                    </div>
+                 </div>
+               </fieldset>
             </div>
          </div>
       </td>
