@@ -4,7 +4,7 @@
 <div id="editprofile">
    <table id="mainData" class="account-page">
       <tr>
-         <td id="tablehead"><?=EDITPROFILETITLE?>&nbsp;<?=$help_icon?></td>
+         <td id="tablehead"><h1><?=EDITPROFILETITLE?>&nbsp;<?=$help_icon?></h1></td>
       </tr>
       <tr>
          <td id="mainTD">
@@ -72,56 +72,56 @@
 											<table class="width-100 inputform">
 												 <tr>
 														<td class="ar vlt width-25" nowrap="nowrap"><?php if ($firstnamereq==1){ ?><em class="red">*</em><?php } ?><?=FIRSTNAME?>:&nbsp;</td>
-														<td>
+														<td class="width-65">
 															 <input type="text" name="fname" id="fname" maxlength="60" value="<?=$fname?>" class="<?php if ($firstnamereq==1){ ?>validate['required']<?php } ?> width-50" />
 														</td>
 												 </tr>
 												 <tr>
 														<td class="ar vlt width-25" nowrap="nowrap"><?php if ($lastnamereq==1){ ?><em class="red">*</em><?php } ?><?=LASTNAME?>:&nbsp;</td>
-														<td>
+														<td class="width-65">
 															 <input type="text" name="lname" id="lname" maxlength="60" value="<?=$lname?>" class="<?php if ($lastnamereq==1){ ?>validate['required']<?php } ?> width-50" />
 														</td>
 												 </tr>
 												 <tr>
 														<td class="ar vlt width-25" nowrap="nowrap"><?php if ($orgreq==1){ ?><em class="red">*</em><?php } ?><?=ORGANIZATIONNAME?>:&nbsp;</td>
-														<td>
+														<td class="width-65">
 															 <input type="text" name="org" id="org" maxlength="60" value="<?=$org?>" class="<?php if ($orgreq==1){ ?>validate['required']<?php } ?> width-50" />
 														</td>
 												 </tr>
 												 <tr>
 														<td class="ar vlt width-25" nowrap="nowrap"><?php if ($jobtitlereq==1){ ?><em class="red">*</em><?php } ?><?=JOBTITLE?>:&nbsp;</td>
-														<td>
+														<td class="width-65">
 															 <input type="text" name="jobtitle" id="jobtitle" maxlength="60" value="<?=$jobtitle?>" class="<?php if ($jobtitlereq==1){ ?>validate['required']<?php } ?> width-50" />
 														</td>
 												 </tr>
 												 <tr>
 														<td class="ar vlt width-25" nowrap="nowrap"><em class="red">*</em><?=EMAILADDRESS?>:&nbsp;</td>
-														<td>
+														<td class="width-65">
 															 <input type="text" name="email1" id="email1" onblur="checkEmail();"  maxlength="128" value="<?=$email1?>" class="validate['required','email'] width-50" />
 															 <div id="checked" class="inline"></div>
 														</td>
 												 </tr>
 												 <tr>
 														<td class="ar vlt width-25" nowrap="nowrap"><?=SEMAILADDRESS?>:&nbsp;</td>
-														<td>
+														<td class="width-65">
 															 <input type="text" name="second_email" id="second_email" maxlength="128" value="<?=$second_email?>" class="validate['email'] width-50" />
 														</td>
 												 </tr>
 												 <tr>
 														<td class="ar vlt width-25" nowrap="nowrap"><?php if ($address1req==1){ ?><em class="red">*</em><?php } ?><?=ADDRESS1?>:&nbsp;</td>
-														<td>
+														<td class="width-65">
 															 <input type="text" name="add1" id="add1" maxlength="60" value="<?=$add1?>" class="<?php if ($address1req==1){ ?>validate['required']<?php } ?> width-50" />
 														</td>
 												 </tr>
 												 <tr>
 														<td class="ar vlt width-25" nowrap="nowrap"><?=ADDRESS2?>:&nbsp; </td>
-														<td>
+														<td class="width-65">
 															 <input type="text" name="add2" id="add2" maxlength="60" value="<?=$add2?>" class="width-50" />
 														</td>
 												 </tr>
 												 <tr>
 														<td class="ar vlt width-25" nowrap="nowrap"><?php if ($cityreq==1){ ?><em class="red">*</em><?php } ?><?=CITY?>:&nbsp;</td>
-														<td>
+														<td class="width-65">
 															 <input type="text" name="city" id="city" maxlength="60" value="<?=$city?>" class="<?php if ($cityreq==1){ ?>validate['required']<?php } ?> width-50" />
 														</td>
 												 </tr>
