@@ -97,7 +97,7 @@
 												 <div class=\"col-md-12\">
 													<div class=\"input-group width-75 mac\">
 														<span class=\"input-group-addon\">#".$i."</span>
-														<input disabled=\"disabled\" type=\"text\" id=\"iddns$i\" name=\"dns[]\" value=\"\" class=\"form-control\" />
+														<input disabled=\"disabled\" type=\"text\" id=\"iddns$i\" name=\"dns[]\" value=\"$currnameserver\" class=\"form-control\" />
 														<input type=\"hidden\" name=\"oldns[]\" value=\"$currnameserver\" />
 													</div>
 												</div>
@@ -136,7 +136,7 @@
 												 <div class=\"col-md-12\">
 													<div class=\"input-group width-75 mac\">
 														<span class=\"input-group-addon\">#".$i."</span>
-														<input disabled=\"disabled\" type=\"text\" id=\"iddns$i\" name=\"dns[]\" value=\"\" class=\"form-control\" />
+														<input disabled=\"disabled\" type=\"text\" id=\"iddns$i\" name=\"dns[]\" value=\"$currnameserver\" class=\"form-control\" />
 														<input type=\"hidden\" name=\"oldns[]\" value=\"$currnameserver\" />
 													</div>
 												</div>

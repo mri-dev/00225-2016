@@ -1332,6 +1332,17 @@ table#mainData.account-page {
     .domain-name{
       text-align: left;
       line-height: 24px;
+
+      strong{
+        color: $color-primary;
+      }
+
+      .action-btn{
+        font-size: 0.8em;
+        margin-left: 5px;
+        background: lighten(desaturate($color-red, 5), 18%);
+        border-radius: 20px;
+      }
     }
     .expire-date{
       text-align: right;

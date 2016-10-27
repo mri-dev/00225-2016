@@ -155,7 +155,6 @@
 								 </div>
 						 </fieldset>
 					</form>
-					<?=NSINSTRUCTIONS3?>
 					<?php } ?>
 				</div>
 			</div>
