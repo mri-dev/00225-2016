@@ -1460,7 +1460,7 @@ table#mainData.account-page .topup input[type=text] {
 
 /* line 1217, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */
 table#mainData.account-page .topup input[type=submit] {
-  margin: 10px 0 0 0;
+  margin: 0 0 0 10px;
 }
 
 /* line 1222, /Users/MolnarIstvan/Documents/Munka/Idea Fontana Kft/Git/Serverland/00225-2016/css/sass/style.scss */

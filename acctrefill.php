@@ -73,7 +73,7 @@
 										<div class="col-md-12 ar">
 											<div class="topup">
 											<?=REFILLAMOUNT?>:
-											<?=LCURRENCYSYMBOL?>&nbsp;<input type="text" maxlength="20" size="8" name="total_charge" class="validate['digit'] red ac bold" id="idsld" /><?=RCURRENCYSYMBOL?><br>
+											<?=LCURRENCYSYMBOL?>&nbsp;<input type="text" maxlength="20" size="8" name="total_charge" class="validate['digit'] red ac bold" id="idsld" /><?=RCURRENCYSYMBOL?>
 											<input type="submit" name="Submit" value="<?=SUBMIT?>" />
 											</div>
 										</div>
