@@ -72,6 +72,6 @@
 </li>
 <?php
 if ($LoggedIn != "1"){ ?>
-<li><a href="<?=$securebase?>/aLogIn.php" class="<?=$page_acctSelected?> ac need-login iconed"><?=TMENU7A?> <i class="fa fa-user"></i></a></li>
+<li class="hide-on-mobiles"><a href="<?=$securebase?>/aLogIn.php" class="<?=$page_acctSelected?> ac need-login iconed"><?=TMENU7A?> <i class="fa fa-user"></i></a></li>
 <?php } ?>
 </ul>

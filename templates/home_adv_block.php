@@ -3,7 +3,7 @@
     <div class="adv-wrapper">
       <div class="overlay"></div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <div class="cont-feat">
             <div class="image">
               <div class="texts">
@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <div class="cont-text">
               <h2>Webtárhely</h2>
               <h1>Szalag cím</h1>
