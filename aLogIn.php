@@ -12,24 +12,13 @@
 <!-- Contents /s -->
 <div id="login">
    <table id="mainData">
-      <tr>
-         <td id="tablehead">
-					 <div class="row">
-					 	<div class="col-md-7 vlm">
-					 		<h1><?=LOGINNOW?>&nbsp;<?=$help_icon?></h1>
-					 	</div>
-						<div class="col-md-5 vlm ac">
-					 		<div class="register-title"><?=NEWTOCOMPANY?>&nbsp;<?=$help_icon?></div>
-					 	</div>
-					 </div>
-         </td>
-      </tr>
       <?php if ($cErrorMsg) { echo '<tr><td colspan="2" style="height:auto;">'.$cErrorMsg.'</td></tr>'; } ?>
       <tr>
          <td class="mainTD width-100">
 					 <div class="row">
 						 	<div class="col-md-7 vlt">
 								<div class="login_credentials">
+                  <h1><?=LOGINNOW?>&nbsp;<?=$help_icon?></h1>
 		               <form method="post" action="<?=$securebase?>/aLogIn.php" id="loginForm" name="form2">
 		                  <table class="width-100">
 		                     <tr>
@@ -56,10 +45,11 @@
 		                  </table>
 		                  <input type="hidden" name="action" value="login" /><input type="hidden" name="rtype" value="<?=$rtype?>" /><input type="hidden" name="subaction" value="<?=$subaction?>" /><input type="hidden" name="cSld" value="<?=$cSld?>" /><input type="hidden" name="cTld" value="<?=$cTld?>" /><input type="hidden" name="id" value="<?=$id?>" /><?=$hiddeninc?>
 		               </form>
-		               <div class="small"><?=BYLOGGININ?> <a href="terms.php" rel="external"><?=UMTERMS?></a>.</div>
+		               <div class="small aszft"><?=BYLOGGININ?> <a href="terms.php" rel="external"><?=UMTERMS?></a>.</div>
 		            </div>
 						 	</div>
 							<div class="col-md-5 vlt">
+                <h3 class="register-title"><?=NEWTOCOMPANY?>&nbsp;<?=$help_icon?></h3>
 								<div class="login-register-info">
 		               <?=WHYREGISTER?>
 		               <form method="post" action="createacct.php" onsubmit="submitonce(this);">

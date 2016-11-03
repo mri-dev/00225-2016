@@ -3,6 +3,11 @@
   .page-holder{
     width: 100%;
   }
+  table#mainData{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
   #menu > li > a{
     font-size: 16px !important;
     padding-right: 15px !important;
@@ -17,10 +22,27 @@
     }
   }
 
+  .domain-searcher{
+    width: 80%;
+  }
+
+  .domain-searcher form .form-wrapper button[type=submit]{
+    font-size: 1em;
+  }
+
+  .domain-searcher form .form-wrapper button[type=submit] i{
+    margin-right: 0;
+  }
+
   .top-main-header{
     .row{
       padding: 0 30px !important;
     }
+  }
+  .adv-block-container .adv-wrapper .cont-feat .image .texts .list{
+    top: -50px;
+    left: auto;
+    right: -50px;
   }
 }
 
@@ -32,6 +54,17 @@
     }
   }
 
+  .domain-searcher{
+    width: 85%;
+  }
+
+  .service-block-container .services{
+    flex-wrap: wrap;
+  }
+  .service-block-container .services > .service-wrapper{
+    flex-basis: 50%;
+  }
+
   .hideon-layout-break{
     display:none;
   }
@@ -39,10 +72,73 @@
   .menu-holder{
     text-align: center;
   }
+
+  #bottom_bg .footer{
+    text-align: center;
+  }
+
+  #bottom_bg .bottom{
+    height: auto;
+    min-height: initial;
+  }
+  #bottom_bg .bottom .logostr,
+  #bottom_bg .bottom .contact-list
+  {
+    position: relative;
+    top: auto;
+    left: auto;
+    right:  auto;
+  }
+  #bottom_bg .bottom .logostr{
+    margin-bottom: 15px;
+  }
+  #bottom_bg .bottom .contact-list{
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
 /* Standard tablet */
 @media screen and (max-width: 768px) {
+  .adv-block-container{
+    background-image: none;
+  }
+  .info-blocks .item .item-wrapper{
+    margin: 20px 5%;
+  }
+  .domain-searcher form .form-wrapper.search-input{
+    width: 55%;
+  }
+  .domain-searcher form .form-wrapper input,
+  .domain-searcher form .form-wrapper button{
+    font-size: 1em;
+  }
+  .domain-searcher form .form-wrapper.search-list{
+    width: 20%;
+  }
+  .domain-searcher form .form-wrapper.search-button{
+    width: 25%;
+  }
+  .domain-searcher .domain-links .link-wrapper a{
+    padding: 15px 0;
+  }
+  .domain-searcher form .form-wrapper button[type=submit]{
+    font-size: 0.85em;
+
+    i{
+      display: none;
+    }
+  }
+  .domain-searcher{
+    width: 95%;
+    margin: 8px auto;
+  }
+  .domain-searcher .domain-links .link-wrapper{
+    padding: 5px;
+  }
+  .domain-searcher .domain-links{
+    margin: 0;
+  }
   .logo-row .logo {
     padding: 0 !important;
   }
@@ -108,6 +204,7 @@
   .top-main-header{
     background: $color-primary;
     height: 0px !important;
+    overflow: hidden;
 
     .row, .menu-holder{
       padding: 0 !important;
@@ -182,15 +279,106 @@
     }
   }
 
+  .domain-searcher .domain-links{
+    flex-wrap: wrap;
+  }
+
+  .domain-searcher .domain-links .link-wrapper{
+    flex-basis: 50%;
+  }
+
+  .adv-block-container .adv-wrapper{
+    padding: 40px 0 5px 0;
+  }
+
   .show-on-mobiles{
     display: block;
   }
   .hide-on-mobiles{
     display: none !important;
   }
+
+  .row{
+    margin: 0;
+
+    & > div[class^=col-]{
+      padding: 0;
+    }
+  }
+
+  #login .login_credentials{
+    .aszft{
+      margin: 5px 0;
+      text-align: center;
+    }
+  }
+
+  #login .register-title{
+    margin-top:25px;
+  }
+
+  .adv-block-container .adv-wrapper .cont-text{
+    padding: 15px;
+  }
+
+  table td#docTD{
+    padding: 0 15px;
+  }
+
+  #login{
+    margin: 0 -15px;
+  }
+
+  .homepage{
+    margin: 0 -15px;
+  }
+  table#mainData td#tablehead h1{
+    line-height: 1;
+  }
+
+  table.formtable{
+    white-space: nowrap;
+    td[class*=width-]{
+      width: 100% !important;
+    }
+  }
 }
 
 /* Standard mobileszköz */
 @media screen and (max-width: 480px) {
+  .h1, h1 {
+    font-size: 30px;
+  }
+  .adv-block-container .adv-wrapper .cont-feat .image .texts .list {
+    right: -20px;
+    top: -65px;
+    font-size: 0.75em;
+  }
+  .adv-block-container .adv-wrapper .cont-feat .image .texts .title{
+    font-size: 1em;
+  }
+  .domain-searcher form .form-wrapper input, .domain-searcher form .form-wrapper button {
+    font-size: 0.7em;
+  }
+  .service-block-container .services > .service-wrapper{
+    flex-basis: 100%;
+    margin: 0 5%;
+  }
 
+  .header .a-list{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+
+    li{
+      text-align: center;
+    }
+    li:first-child{
+      border-left: none;
+    }
+  }
+  .service-block-container{
+    padding: 20px 0;
+  }
 }
