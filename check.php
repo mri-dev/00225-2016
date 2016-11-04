@@ -36,8 +36,8 @@
 <fieldset>
 				<div class="domain-check-form">
 					<h3><?=DOMAIN?></h3>
-					<input type="text" maxlength="272" name="cSSld" class="validate['required'] width-55" id="idsld" />
-					<input type="submit" name="Submit" class="divblock alc" value="<?=CHECKAVA?>" />
+					<input type="text" maxlength="272" name="cSSld" class="validate['required'] width-55 fullwidthonmobile" id="idsld" />
+					<input type="submit" name="Submit" class="divblock alc fullwidthonmobile" value="<?=CHECKAVA?>" />
 				</div>
         <!-- build_tlds_checkboxes("register(if you want to register a new domain name) transfer(if you want to create a transfer check list)","How Many TLDs","How Many Columns In A Row","showPrice/0") -->
         <div class="tlds"><?=build_tlds_checkboxes("register","","4","showPrice")?></div>

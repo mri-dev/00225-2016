@@ -3,11 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="<?=HTMLDIR?>">
 <head>
 <title><?=$pagetitle?></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="<?=$pagekeywords?>" />
 <meta name="description" content="<?=$pagedesc?>" />
 <meta http-equiv="Content-Type" content="text/html; charset=<?=CHARSET?>" />
 <meta http-equiv="Content-Language" content="<?=CONTENTLANG?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <?php if (($br->Name == 'MSIE') && ($br->Version == "6.0")) { ?><script language="javascript" type="text/javascript" src="<?=$currentbase?>/js/common/IE7.js"></script><?php } ?>
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"

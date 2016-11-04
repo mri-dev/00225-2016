@@ -332,14 +332,99 @@
   .homepage{
     margin: 0 -15px;
   }
+  table#mainData td#tablehead{
+    padding: 20px 0 0 0;
+    font-size: 1em;
+  }
   table#mainData td#tablehead h1{
     line-height: 1;
   }
 
+  table.data td.boxtitle{
+    font-size: 1em !important;
+  }
+
+  table.pkgtable{
+     td.descr,
+     td.order{
+       display: block;
+       width: 100%;
+     }
+  }
+
+  iframe{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  #pkg{
+    table.data{
+      td {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+      }
+
+      *[class*=width-]{
+        width: 100%;
+      }
+    }
+
+    .pkgtabletitle{
+      text-align: center;
+    }
+  }
+
+  .tlds{
+    table{
+      tr, td {
+        width: 50% !important;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        text-align: center;
+      }
+
+      td {
+        border-bottom: none !important;
+      }
+    }
+  }
+
+  .table-container{
+    width: 100%;
+    overflow: auto;
+
+    table {
+      overflow-x: auto;
+		  display: block;
+    }
+  }
+
+  .fullwidthonmobile{
+    width: 100% !important;
+    display: block !important;
+  }
+
   table.formtable{
-    white-space: nowrap;
-    td[class*=width-]{
+    tr, td, td[class*=width-]{
       width: 100% !important;
+      display: block;
+    }
+
+    .ar, .al, .ac {
+      text-align: left !important;
+    }
+
+    *[class*=width-]{
+      width: 100%;
+    }
+
+    textarea{
+      border: 1px solid #cccfd1;
     }
   }
 }

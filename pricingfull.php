@@ -18,7 +18,9 @@
          <div class="underline bold"><?=PRICESPERYEAR?></div>
          <div class="awform">
             <fieldset>
+              <div class="table-container">
                <?=$pricechart?>
+               </div>
             </fieldset>
          </div>
       </td>

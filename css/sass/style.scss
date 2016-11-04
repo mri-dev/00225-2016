@@ -1475,7 +1475,7 @@ table.pkgtable{
   width: 100%;
   border: 1px solid $color-grey;
   td{
-    padding: 8px;
+    padding: 12px;
   }
   td.pkgtabletitle{
     background: $color-grey;
@@ -1489,6 +1489,32 @@ table.pkgtable{
     border-right: 1px solid #dadada;
     width: 75%;
     color: #676767;
+
+    font[color=red]{
+      font-size: 0.85em;
+      font-style: italic;
+    }
+
+    ul {
+      padding-left: 35px !important;
+      li{
+        margin-left: 0 !important;
+        list-style: none !important;
+        position: relative;
+        line-height: 1;
+        padding: 6px 0;
+        font-size: 1.1em;
+        color: #333333;
+
+        &:before{
+          content: "\f058";
+          font-family: 'FontAwesome';
+          position: absolute;
+          left: -25px;
+          color: $color-green;
+        }
+      }
+    }
   }
   td.order {
     padding: 0;
@@ -1716,10 +1742,11 @@ h2.hsignup{
     border: 1px solid #d7d7d7;
     width: 20px;
     height: 20px;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
+    top: 0;
+    /*-webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
     transform: translate(0, -50%);
+    */
   }
 }
 
