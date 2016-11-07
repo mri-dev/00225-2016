@@ -1,7 +1,7 @@
 <?php
 	global $umenu;
 	#User Menu /s
-	$umenu="<div id=\"uvmenu\">";
+	$umenu="<div id=\"usermenuvtoggler\" class=\"show-on-mobiles usermenutoggler\">Menü kinyitása</div><div id=\"uvmenu\" class=\"\">";
 	#start open sub-menu 1
 	$umenu.="<div id=\"UsersMenuPanel1\" class=\"CollapsiblePanel\">";
     $umenu.="<div class=\"CollapsiblePanelTab\">".UMMENU1."</div>";

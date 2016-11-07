@@ -45,26 +45,26 @@
             <div class="elementHolder">
                <?php if($cart_list!=""){ ?>
                <div class="elements ac" id="s0">
-                  <strong><?=DOMAIN?></strong>:<select name="chsld" id="chsld"><?=$cart_list?></select>&nbsp;<input type="submit" name="submit" value="<?=NEXT?>" />
+                  <strong><?=DOMAIN?>:</strong><select name="chsld" id="chsld"><?=$cart_list?></select>&nbsp;<input type="submit" name="submit" value="<?=NEXT?>" />
                </div>
                <?php } ?>
                <?php if($dom_list!=""){ ?>
                <div class="elements ac" id="s1">
-                  <strong><?=DOMAIN?></strong>: <select name="dhsld" id="dhsld"><?=$dom_list?></select>&nbsp;<input type="submit" name="submit" value="<?=NEXT?>" />
+                  <strong><?=DOMAIN?>:</strong><select name="dhsld" id="dhsld"><?=$dom_list?></select>&nbsp;<input type="submit" name="submit" value="<?=NEXT?>" />
                </div>
                <?php } ?>
                <div class="elements ac" id="s2">
-                  <strong><?=DOMAIN?></strong>:<input type="text" name="thsld" id="thsld" value="<?=$thsld?>" /><strong>.</strong><select name="thtld" id="thtld"><?=$rtld_list?></select>&nbsp;<input type="submit" name="submit" value="<?=NEXT?>" />
+                  <strong><?=DOMAIN?>:</strong><input type="text" name="thsld" id="thsld" value="<?=$thsld?>" /><span class="hide-on-mobiles">.</span><select name="thtld" id="thtld"><?=$rtld_list?></select> <input type="submit" name="submit" value="<?=NEXT?>" />
                </div>
                <div class="elements ac" id="s3">
-                  <strong><?=DOMAIN?></strong>:<input type="text" name="mhsld" id="mhsld" value="<?=$mhsld?>" /><strong>.</strong><select name="mhtld" id="mhtld"><?=$ttld_list?></select>&nbsp;<input type="submit" name="submit" value="<?=NEXT?>" />
+                  <strong><?=DOMAIN?>:</strong><input type="text" name="mhsld" id="mhsld" value="<?=$mhsld?>" /><span class="hide-on-mobiles">.</span><select name="mhtld" id="mhtld"><?=$ttld_list?></select> <input type="submit" name="submit" value="<?=NEXT?>" />
                </div>
                <div class="elements ac" id="s4">
-                  <strong><?=DOMAIN?></strong>:<input type="text" name="bhsld" id="bhsld" value="<?=$bhsld?>" /><strong>.</strong><input type="text" name="bhtld" id="bhtld" size="5" value="<?=$bhtld?>" />&nbsp;<input type="submit" name="submit" value="<?=NEXT?>" />
+                  <strong><?=DOMAIN?>:</strong><input type="text" name="bhsld" id="bhsld" value="<?=$bhsld?>" /><span class="hide-on-mobiles">.</span><input type="text" name="bhtld" id="bhtld" size="5" value="<?=$bhtld?>" /> <input type="submit" name="submit" value="<?=NEXT?>" />
                </div>
                <?php if($subdom_hosting==1){ ?>
                <div class="elements ac" id="s5">
-                  <strong><?=DOMAIN?></strong>:<input type="text" name="sdsld" id="sdsld" value="<?=$sdsld?>" /><strong>.</strong><select name="sdtld" id="sdtld"><?=$subdom_list?></select>&nbsp;<input type="submit" name="submit" value="<?=NEXT?>" />
+                  <strong><?=DOMAIN?>:</strong><input type="text" name="sdsld" id="sdsld" value="<?=$sdsld?>" /><span class="hide-on-mobiles">.</span><select name="sdtld" id="sdtld"><?=$subdom_list?></select> <input type="submit" name="submit" value="<?=NEXT?>" />
                </div>
                <?php } ?>
             </div>

@@ -231,7 +231,8 @@
     display: none !important;
     position: relative !important;
     top: initial !important;
-    left: initial !important;
+    left: 0 !important;
+    right: 0 !important;
     width: 100% !important;
     background: darken($color-primary, 10%) !important;
     -webkit-transform: none !important;
@@ -245,6 +246,10 @@
     li > a{
       padding: 15px 25px !important;
     }
+  }
+
+  #menu > li.active > ul{
+    display: block !important;
   }
 
   #menu > li > ul:before {
@@ -409,7 +414,8 @@
     display: block !important;
   }
 
-  table.formtable{
+  table.formtable,
+  table.contactform {
     tr, td, td[class*=width-]{
       width: 100% !important;
       display: block;
@@ -427,7 +433,136 @@
       border: 1px solid #cccfd1;
     }
   }
+
+  .inpSubmit,
+  .cart-coupon-container .code, .cart-summary-container .code input[type=submit]{
+    width: 100%;
+    margin: 0 auto 5px auto;
+  }
+
+  .cart-summary-container{
+    padding: 10px 0;
+  }
+
+  .server-details .details-important, .server-details .details-features{
+    display: block;
+    width: 100%;
+    float: none;
+  }
+
+  .server-details .details-important{
+    border: none;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .server-details .details-features{
+    padding: 10px 0 0 0 !important;
+    margin: 15px 0 0 0 !important;
+    font-size: 0.85em;
+    border-top: 1px solid #d7d7d7;
+
+    td {
+      vertical-align: top !important;
+    }
+  }
+  .server-details .details-important .image{
+    height: auto;
+    width: 100%;
+    margin: 0 auto 15px auto;
+
+    img{
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  .elements{
+    strong{
+      display: block;
+      width: 100%;
+      margin: 0 0 5px 0;
+    }
+    select,
+    input[type=text]{
+      width: 100%;
+      margin: 0 0 5px 0;
+    }
+
+    select + input[type=submit],
+    input[type=text] + input[type=submit] {
+      width: 100%;
+      margin: 0 0 5px 0;
+    }
+  }
+
+  #uvmenu{
+    padding: 0;
+  }
+
+  table#mainData.account-page .account-page-holder .sidemenu,
+  table#mainData.account-page .account-page-holder .account-contant-container{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  table#mainData.account-page .account-page-holder .account-contant-container{
+    margin-top: 15px;
+    font-size: 0.9em;
+  }
+
+  table#mainData.account-page .account-page-holder .sidemenu #uvmenu {
+    display: none;
+  }
+  table#mainData.account-page .account-page-holder .sidemenu #uvmenu.opened {
+    display: block;
+  }
+
+  .usermenutoggler{
+    text-align: center;
+    background: $color-green;
+    color: white;
+    padding: 15px;
+    margin: 0 0 5px 0;
+    font-size: 0.85em;
+    cursor: pointer;
+    position: relative;
+
+    &:before, &:after {
+      position: absolute;
+      content:"\f067";
+      font-family: 'FontAwesome';
+    }
+
+    &:before{
+      left: 10px;
+    }
+    &:after{
+      right: 10px;
+    }
+
+    &.opened {
+      background: desaturate($color-red, 20);
+      &:before, &:after {
+        content:"\f068";
+      }
+    }
+  }
+
+  table#mainData.account-page #userStatsLeft{
+    display: block;
+    width: 100%;
+  }
+  table#mainData.account-page .accountdetails{
+    display: block;
+    width: 100%;
+  }
+  table#mainData.account-page #userPanel{
+    margin-top: 100px;
+  }
 }
+
 
 /* Standard mobileszköz */
 @media screen and (max-width: 480px) {

@@ -33,6 +33,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="<?=$currentbase?>/templates/<?=$templatedir?>/css/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+<script language="javascript" type="text/javascript" src="<?=$currentbase?>/templates/<?=$templatedir?>/js/jquery.cookie.js"></script>
+<script language="javascript" type="text/javascript" src="<?=$currentbase?>/templates/<?=$templatedir?>/js/jquery.cookieaccept.js"></script>
 <script language="javascript" type="text/javascript" src="<?=$currentbase?>/templates/<?=$templatedir?>/js/master.js"></script>
 <?php if($userssnews=="1"){ ?>
 <?php } ?>

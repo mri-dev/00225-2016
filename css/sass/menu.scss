@@ -109,7 +109,8 @@
             }
         }
 
-        &:hover > ul {
+        &:hover > ul,
+        &.active > ul {
             display: block;
         }
     }
