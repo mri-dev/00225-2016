@@ -28,7 +28,7 @@
                 <a href="<?=$base?>/index.php"><?=BMENU1?></a>
                 <span class="sep">|</span>
                 <?php if ($_SESSION['t']!=2) { ?><a href="<?=$base?>/hosting.php"><?=BMENU2?></a>
-                <span class="sep"></span>
+                <span class="sep">|</span>
                 <?php }else{?><a href="<?=$base?>/pricingfull.php"><?=BMENU8?></a>
                 <span class="sep">|</span>
                 <?php } ?>

@@ -558,8 +558,62 @@
     display: block;
     width: 100%;
   }
+
+  table#mainData.account-page fieldset legend{
+    margin: 0 0 15px 0;
+  }
+
+  table#mainData.account-page .topup input[type=submit]{
+    margin: 5px 0;
+  }
+
+  table#mainData.account-page .topup{
+    text-align: center;
+  }
+
+  table#mainData.account-page #userStatsLeft,
   table#mainData.account-page #userPanel{
-    margin-top: 100px;
+    .action-btn{
+      display: block;
+      text-align: center;
+      padding: 8px;
+      margin: 4px 0;
+    }
+  }
+  table#mainData.account-page .domain-search-welcome{
+    position: relative;
+    bottom: auto;
+
+    input[type=text]{
+      margin-bottom: 5px;
+      width: 100%;
+    }
+  }
+  table#mainData.account-page #userPanel ul.tab-menu{
+    width: 100%;
+    top: -48px;
+  }
+  table#mainData.account-page .user-stat-holder .rhead,
+  table#mainData.account-page .user-stat-holder .rvar {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  table#mainData.account-page .user-stat-holder .rvar {
+    font-size: 1.6em;
+  }
+  table#mainData.account-page #userPanel ul.tab-menu li{
+    text-align: center;
+    width: 50%;
+    margin: 0;
+    font-size: 0.9em;
+  }
+  .box .row > div[class*=col-]  {
+    input[type=text],
+    select,
+    input[type=submit]
+    input[type=button]{
+      margin: 5px 0;
+    }
   }
 }
 
