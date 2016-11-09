@@ -2007,6 +2007,7 @@ h2.hsignup{
   position: fixed !important;
   top: 0;
   right: 0;
+  z-index: 999999999;
 }
 
 .unselected, .selected {
