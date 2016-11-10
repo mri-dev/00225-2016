@@ -1,6 +1,7 @@
 $(function(){
   // Cookie szabályzat
   $.cookieAccepter('https://serverland.hu/terms.php');
+
   // Objektum nyitó/záró
   $('*[toggle]').click(function(){
     var opened = ($(this).attr('toggle-status') == 0) ? false : true;
@@ -17,11 +18,18 @@ $(function(){
 
   $('#menu > li').click(function(e){
     var lie = $(this);
-    $('#menu > li.active').removeClass('active');
+    $('#menu > li.active').addClass('will-close');
 
     if ( !lie.hasClass('active') ) {
       lie.addClass('active');
     }
+
+    $('#menu > li.active.will-close').removeClass('active will-close');
+  });
+
+  // Font Awesome IE helper
+  $('i[class*=fa]').each(function(i,e){
+    $(e).addClass('fa-fw');
   });
 
   // User menu toggler

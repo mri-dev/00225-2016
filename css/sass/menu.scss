@@ -6,6 +6,13 @@
     margin: 0;
     padding:0;
 
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+ 
     & > li {
         position: relative;
         display: inline-block;
@@ -33,11 +40,13 @@
             }
 
             &.ac {
-                display: initial;
+                display: inline;
                 padding: 10px 15px;
                 font-size: 11px;
                 font-weight: 400;
                 margin-left: 50px;
+                /*line-height: 1;
+                height: 30px;*/
                 -webkit-border-radius: 3px;
                 -moz-border-radius: 3px;
                 border-radius: 3px;

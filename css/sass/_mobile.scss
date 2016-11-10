@@ -231,6 +231,12 @@
     }
   }
 
+  #menu > li.active:not(.hide-on-mobiles){
+    display: block !important;
+    height: auto !important;
+    max-height: 100% !important;
+  }
+
   #menu > li > ul{
     display: none !important;
     position: relative !important;
@@ -254,6 +260,7 @@
 
   #menu > li.active > ul{
     display: block !important;
+    top: 0 !important;
   }
 
   #menu > li > ul:before {
@@ -264,7 +271,7 @@
     border-color: transparent transparent darken($color-primary, 10%) transparent !important;
 }
 
-  #menu > li:hover > ul{
+  #menu > li.active > ul{
     display: block !important;
   }
 
@@ -624,6 +631,9 @@
 
 /* Standard mobileszköz */
 @media screen and (max-width: 480px) {
+  #menu-toggler{
+    left: 15px;
+  }
   #watermarklogo{
     top: auto;
     bottom: 0;

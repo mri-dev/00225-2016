@@ -36,6 +36,9 @@
 <script language="javascript" type="text/javascript" src="<?=$currentbase?>/templates/<?=$templatedir?>/js/jquery.cookie.js"></script>
 <script language="javascript" type="text/javascript" src="<?=$currentbase?>/templates/<?=$templatedir?>/js/jquery.cookieaccept.js"></script>
 <script language="javascript" type="text/javascript" src="<?=$currentbase?>/templates/<?=$templatedir?>/js/master.js"></script>
+<!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<![endif]-->
 <?php if($userssnews=="1"){ ?>
 <?php } ?>
 <?php if(file_exists(WORKDIR."/templates/$templatedir/includes/header_includes.php")){ include(WORKDIR."/templates/$templatedir/includes/header_includes.php"); }else if(file_exists(WORKDIR."/templates/common_files/includes/header_includes.php")){ include(WORKDIR."/templates/common_files/includes/header_includes.php"); } ?>

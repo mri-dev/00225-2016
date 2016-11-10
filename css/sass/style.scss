@@ -319,7 +319,7 @@ select{
         border: 1px solid #cccfd1;
         color:#c1c1c1;
         padding: 0 15px;
-        font-size: 1.2em;
+        font-size: 1.1em;
       }
 
       button[type=submit]{
@@ -541,7 +541,7 @@ select{
     display: flex;
     margin: 0 -25px;
 
-    & > .service-wrapper {
+    & > .service-wrapper { 
       flex-basis: 25%;
       padding: 25px;
 
@@ -550,7 +550,7 @@ select{
         padding: 15px;
         padding-top: 35px;
         border: 1px solid #e1e1e1;
-        background: rgba(255, 255, 255, 0.51);
+        background: rgba(255, 255, 255, 0.52);
         width: 100%;
         text-align: center;
 
